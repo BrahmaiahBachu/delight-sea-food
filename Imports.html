@@ -26,78 +26,12 @@
 <link href="assets/css/color.css" rel="stylesheet">
 <link href="assets/css/style.css" rel="stylesheet">
 <link href="assets/css/responsive.css" rel="stylesheet">
-<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="https://cdn.tailwindcss.com"></script>
     <style>
-        /* Card Styling */
-        .shop-block {
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-            cursor: pointer;
-        }
-
-        .shop-block:hover {
-            transform: scale(1.05);
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
-        }
-
-        .shop-block .inner-box {
-            border-radius: 12px;
-            overflow: hidden;
-            background: white;
-            transition: all 0.3s ease-in-out;
-        }
-
-        .shop-block img {
-            width: 100%;
-            height: 200px;
-            object-fit: cover;
-            border-radius: 12px 12px 0 0;
-        }
-
-        .shop-block .lower-content {
-            padding: 15px;
-            background: white;
-            border-radius: 0 0 12px 12px;
-        }
-
-        .shop-block h6 {
-            font-size: 18px;
-            font-weight: 600;
-            color: #333;
-        }
-
-        .shop-block .price {
-            font-size: 16px;
-            font-weight: bold;
-            color: #e63946;
-        }
-
-        /* Modal Styling */
-        .modal-content {
-            border-radius: 12px;
-        }
-
-        .modal-header {
-            border-bottom: none;
-        }
-
-        .modal-body {
-            text-align: center;
-        }
-
-        .modal-body img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .modal-body p {
-            font-size: 18px;
-            font-weight: bold;
-            color: #e63946;
-        }
+        .shop-block { display: none; }
+        .active { display: block !important; text-decoration: none !important;}
+        .nav-link { cursor: pointer; }
     </style>
 
 </head>
@@ -129,8 +63,8 @@
                                 </div>
                                 <div class="content-box">
                                     <h4>About Us</h4>
-                                    <p>We delivers value by adopting the best global practices by procuring directly from the fishermen and providing fresh fish & seafood in Delhi straight to the consumer via seamless cold chain logistics, maintaining the freshness & quality of the fish and seafood.</p>
-                                    <a href="know-your-fish.html" class="theme-btn">Know your Sea Food <i class="fas fa-long-arrow-alt-right"></i></a>
+                                    <p>India Fish Co. delivers value by adopting the best global practices by procuring directly from the fishermen and providing fresh fish & seafood in Delhi straight to the consumer via seamless cold chain logistics, maintaining the freshness & quality of the fish and seafood.</p>
+                                    <a href="know-your-fish.html" class="theme-btn">Know your Fish<i class="fas fa-long-arrow-alt-right"></i></a>
                                 </div>
                                 <div class="contact-info">
                                     <h4>Contact Info</h4>
@@ -196,7 +130,7 @@
                                         <li ><a href="index.html">Home</a>
                                            
                                         </li> 
-                                        <li><a href="know-your-fish.html">Know your Sea Food </a></li> 
+                                        <li><a href="know-your-fish.html">Know Your Fish</a></li> 
                                         <li class="current "><a href="Imports.html">Imports</a></li>
                                         <li><a href="Fish-Desi.html">Fish Desi</a></li>
                                           <li><a href="Prawns.html">Prawns</a></li>
@@ -283,82 +217,338 @@
 <section class="shop-style-two extra-color">
     <div class="auto-container">
         <div class="sec-title light text-center">
-            <!-- <span>Delight Sea Food </span> -->
+            <span>Delight Sea Food </span>
             <h2 style="color: black;">Imports</h2>
         </div>
-     
-        <div class="container mt-4">
-            <h2 class="text-center text-gray-800 font-bold text-3xl mb-4">Fresh Seafood Selection</h2>
-            <div class="row" id="card-container">
-                <!-- Cards will be dynamically inserted here -->
+        <div class="row clearfix">
+            
+    <!-- Navigation Menu -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">Seafood Menu</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('octopus')">Octopus</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('squid')">Squid</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('clams')">Clams</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('mussels')">Mussels</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('tuna')">Tuna</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('kingfish')">King Fish</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('crab')">Crab</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('solman')">Solman</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('shark')">Shark</a></li>
+                    <li class="nav-item"><a class="nav-link" onclick="filterItems('stingray')">Sting Ray</a></li>
+                </ul>
             </div>
         </div>
-    
-        <!-- Modal -->
-        <div class="modal fade" id="itemModal" tabindex="-1" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="itemTitle"></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                    </div>
-                    <div class="modal-body">
-                        <img id="itemImage" src="" class="img-fluid" alt="">
-                        <p class="mt-3" id="itemPrice"></p>
-                    </div>
+    </nav>
+
+    <!-- Seafood Items -->
+    <div class="container mt-4">
+        <div id="octopus" class="col-lg-3 col-md-6 col-sm-12 shop-block active">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/octopus.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Octopus</h6>
+                    <span class="price">600/- KG (70%)</span>
                 </div>
             </div>
         </div>
-    
-        <script>
-            const items = [
-                { title: "Octopus", price: "600/- KG (70%)", img: "assets/images/octopus.jpg" },
-                { title: "Squid", price: "Rs.500/- KG (70%)", img: "assets/images/squad.jpg" },
-                { title: "Sea Shells/Clams", price: "Rs.500/- KG", img: "assets/images/sea-shell.jpg" },
-                { title: "Mussels", price: "Rs.2000/- KG", img: "assets/images/museel.jpg" },
-                { title: "Atlantic Tuna", price: "Rs.2500/- KG", img: "assets/images/tuna.jpg" },
-                { title: "King Fish", price: "Rs.1000/- KG", img: "assets/images/kingfish.jpg" },
-                { title: "Crab (Blue)", price: "Rs.700/- KG", img: "assets/images/bluecrab.jpg" },
-                { title: "Solman Fish", price: "Rs.2500/-", img: "assets/images/solman.jpg" },
-                { title: "Shark Fish", price: "Rs.1000/- KG", img: "assets/images/shark.jpg" },
-                { title: "Sting Ray", price: "Rs.1000/- KG", img: "assets/images/sting.jpg" }
-            ];
-    
-            $(document).ready(function() {
-    const container = $("#card-container");
-    items.forEach((item, index) => {
-        const card = `
-            <div class="col-lg-3 col-md-6 col-sm-12 p-3">
-                <div class="shop-block shadow-lg" data-index="${index}">
+
+        <div id="squid" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/squad.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Squid</h6>
+                    <span class="price">Rs.500/- KG (70%)</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="clams" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/sea-shell.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Sea Shells/Clams (Tesrio)</h6>
+                    <span class="price">Rs.500/- KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="mussels" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/museel.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Mussels</h6>
+                    <span class="price">Rs.2000/- KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="tuna" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/tuna.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Atlantic Tuna</h6>
+                    <span class="price">Rs.2500/- KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="kingfish" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/kingfish.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>King Fish</h6>
+                    <span class="price">Rs.1000/- KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="crab" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/bluecrab.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Crab (Blue)</h6>
+                    <span class="price">Rs.700/- KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="solman" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/solman.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Solman Fish</h6>
+                    <span class="price">Rs.2500/-</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="shark" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/shark.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Shark Fish</h6>
+                    <span class="price">Rs.1000/- KG</span>
+                </div>
+            </div>
+        </div>
+
+        <div id="stingray" class="col-lg-3 col-md-6 col-sm-12 shop-block">
+            <div class="inner-box">
+                <figure class="image-box">
+                    <img src="assets/images/sting.jpg" alt="">
+                </figure>
+                <div class="lower-content">
+                    <h6>Sting Ray</h6>
+                    <span class="price">Rs.1000/- KG</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function filterItems(category) {
+            document.querySelectorAll('.shop-block').forEach(item => {
+                item.classList.remove('active');
+            });
+            document.getElementById(category).classList.add('active');
+        }
+    </script>
+            <!-- <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="00ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 0ms; animation-name: fadeInUp;">
                     <div class="inner-box">
                         <figure class="image-box">
-                            <img src="${item.img}" alt="${item.title}">
+                            <img src="assets/images/octopus.jpg" alt="">
+                         
                         </figure>
-                        <div class="lower-content text-center">
-                            <h6>${item.title}</h6>
-                            <span class="price">${item.price}</span>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Octopus</a></h6>
+                                <span class="price">600/- KG (70%)</span>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        `;
-        container.append(card);
-    });
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="200ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 200ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/squad.jpg" alt="">
+                        
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Squid</a></h6>
+                                <span class="price">Rs.500/- KG (70%)</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="400ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 400ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/sea-shell.jpg" alt="">
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Sea Shells/Clams (Tesrio) </a></h6>
+                                <span class="price">Rs.500/- KG </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/museel.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Mussels (70%) </a></h6>
+                                <span class="price"> Rs.2000/- KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+         
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/tuna.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Atlantic Tuna (70%) </a></h6>
+                                <span class="price"> Rs.2500/- KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/kingfish.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">King Fish (80%)  </a></h6>
+                                <span class="price"> Rs.1000/- KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/bluecrab.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Crab (Blue) (70%)  </a></h6>
+                                <span class="price"> Rs.700/- KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-    // Attach click event to dynamically created elements
-    $(document).on("click", ".shop-block", function() {
-        const index = $(this).data("index"); // Correct way to retrieve index
-        const item = items[index];
-
-        $("#itemTitle").text(item.title);
-        $("#itemPrice").text(item.price);
-        $("#itemImage").attr("src", item.img);
-
-        $("#itemModal").modal("show");
-    });
-});
-
-        </script>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/solman.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Solman Fish (70%)  </a></h6>
+                                <span class="price">Rs.2500/-</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/shark.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Shark Fish (70%) </a></h6>
+                                <span class="price"> Rs. 1000/- KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12 shop-block">
+                <div class="shop-block-two wow fadeInUp animated animated animated" data-wow-delay="600ms" data-wow-duration="1500ms" style="visibility: visible; animation-duration: 1500ms; animation-delay: 600ms; animation-name: fadeInUp;">
+                    <div class="inner-box">
+                        <figure class="image-box">
+                            <img src="assets/images/sting.jpg" alt="">
+                           
+                          
+                        </figure>
+                        <div class="lower-content">
+                            <div class="inner">
+                                <h6><a href="#">Sting Ray (90%) </a></h6>
+                                <span class="price"> Rs. 1000/- KG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            
+        </div>
+        
     </div>
 </section>
 
@@ -372,7 +562,7 @@
                                 <div class="footer-widget logo-widget">
                                     <figure class="footer-logo"><a href="index.html"><img src="assets/images/fish-logo.png" width="30%" alt=""></a></figure>
                                     <div class="text">
-                                        <p>We delivers value by adopting the best global practices by procuring directly from the fishermen and providing fresh fish & seafood in Delhi straight to the consumer via seamless cold chain logistics, maintaining the freshness & quality of the fish and seafood. </p>
+                                        <p>India Fish Co. delivers value by adopting the best global practices by procuring directly from the fishermen and providing fresh fish & seafood in Delhi straight to the consumer via seamless cold chain logistics, maintaining the freshness & quality of the fish and seafood. </p>
                                     </div>
                                 </div>
                             </div>
@@ -428,7 +618,7 @@
                     <div class="copyright pull-left"><h5>&copy;2025 Copy Right <a href="index.html"> Delight Sea Food </a>. All rights reserved.</h5></div>
                     <ul class="footer-nav pull-right clearfix">
                         <li><a href="index.html">Home</a></li>
-                        <li><a href="know-your-fish.html">Know your Sea Food </a></li>
+                        <li><a href="know-your-fish.html">Know Your Fish</a></li>
                         <li><a href="Imports.html">Imports</a></li>
                         <li><a href="Fish-Desi.html">Fish Desi</a></li>
                           <li><a href="Prawns.html">Prawns</a></li>
@@ -472,6 +662,8 @@
 
     <!-- main-js -->
     <script src="assets/js/script.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> -->
+
 
 </body><!-- End of .page_wrapper -->
 
