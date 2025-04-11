@@ -36,27 +36,61 @@
             });
         });
     </script>
+    <style>
+        .shop-block {
+            display: none;
+        }
 
+        .active {
+            display: block !important;
+            text-decoration: none !important;
+        }
+
+        .nav-link {
+            cursor: pointer;
+        }
+    </style>
 </head>
 
 <body>
-
     <div class="" id="">
-
         <header>
             <div class="d-flex">
-
                 <img src="images/new-images/fish-logo.png" alt="" class="logo1">
-
-
-
                 <div class="d-flex">
                     <nav class="m-auto">
                         <ul class="d-flex m-auto list-none ul-style">
                             <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2 current"> <a href="know-your-sea-food.html" class="header-list">Know your
+                            <li class="px-2 current dropdown"> <a href="know-your-sea-food.html"
+                                    class="header-list dropbtn">Know your
                                     Sea Food
-                                </a></li>
+                                </a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('prawns')"> Prawns</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('catla-fish')">Catla
+                                        Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('rohu')">Rohu</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('kingfish')">Kingfish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('basa-fish')">Basa
+                                        Fish</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('tilapia')">Tilapia</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('roopchand-fish')">Roopchand Fish</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('atlantic-salmon')">Atlantic Salmon</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('crab')">Crab</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('lobster')">Lobster</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('octopus')">Octopus</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('bommidayalu')">Bommidayalu</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('pomfret')">Pomfret</a>
+                                </div>
+                            </li>
                             <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
                             <li class="px-2"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
                             <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
@@ -65,27 +99,22 @@
                         </ul>
                     </nav>
                 </div>
-
-
-
-
             </div>
             <div class="logo-header">
                 Delight Sea Food
                 </h1>
             </div>
             <div class="over-hidden p-1">
-
             </div>
         </header>
-        <section id="content">
+        <section id="content over-hidden">
             <div class="div-main" id="">
                 <div class="div-main-indent">
                     <div class="light-banner">
                         <div class="container_24">
                             <div class="wrapper">
                                 <!-- 1 -->
-                                <div class="py-3">
+                                <div id='prawns' class=" shop-block active py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Prawns
@@ -116,7 +145,7 @@
                                     </div>
                                 </div>
                                 <!-- 2 -->
-                                <div class="py-3">
+                                <div id='catla-fish' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Catla Fish
@@ -147,9 +176,8 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- 1 -->
-                                <div class="py-3">
+                                <!-- 3 -->
+                                <div id='rohu' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Rohu
@@ -177,8 +205,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 2 -->
-                                <div class="py-3">
+                                <!-- 4 -->
+                                <div id='kingfish' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Kingfish
@@ -211,8 +239,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 1 -->
-                                <div class="py-3">
+                                <!-- 5 -->
+                                <div id='baked' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Basa Fish
@@ -242,8 +270,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 2 -->
-                                <div class="py-3">
+                                <!-- 6 -->
+                                <div id='tilapia' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Tilapia
@@ -276,9 +304,8 @@
                                         </div>
                                     </div>
                                 </div>
-
-                                <!-- 1 -->
-                                <div class="py-3">
+                                <!-- 7 -->
+                                <div id='roopchand-fish' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Roopchand Fish
@@ -319,8 +346,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 2 -->
-                                <div class="py-3">
+                                <!-- 8 -->
+                                <div id='atlantic-salmon' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Atlantic Salmon
@@ -357,8 +384,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 1 -->
-                                <div class="py-3">
+                                <!-- 9 -->
+                                <div id='crab' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Crab
@@ -390,8 +417,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 2 -->
-                                <div class="py-3">
+                                <!-- 10 -->
+                                <div id='lobster' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Lobster
@@ -424,7 +451,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="py-3">
+                                <!-- 11 -->
+                                <div id='octopus' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Octopus
@@ -458,8 +486,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <!-- 2 -->
-                                <div class="py-3">
+                                <!-- 12 -->
+                                <div id='bommidayalu' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Bommidayalu
@@ -492,7 +520,8 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="py-3">
+                                <!-- 13 -->
+                                <div id='pomfret' class=" shop-block py-3">
                                     <div class="box-shadow">
                                         <div class="header-colour px-2 pt-2">
                                             Pomfret
@@ -527,14 +556,21 @@
                                         </div>
                                     </div>
                                 </div>
-
-                            </div><!--the end of wrapper-->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                function filterItems(category) {
+                    document.querySelectorAll('.shop-block').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    document.getElementById(category).classList.add('active');
+                }
+            </script>
         </section>
-        <footer class="main-footer transform-none">
+        <footer class="main-footer-new transform-none">
             <div class="auto-container">
                 <div class="footer-top">
                     <div class="">
@@ -542,12 +578,13 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="">
                                     <figure class="footer-logo"><a href="index.html"><img
-                                                src="images/new-images/fish-logo.png" width="30%" class="d-flex" alt=""></a></figure>
+                                                src="images/new-images/fish-logo.png" width="30%" class="d-flex"
+                                                alt=""></a></figure>
                                     <div class="footer-text-1">
                                         We delivers value by adopting the best global practices by
-                                            procuring directly from the fishermen and providing fresh fish & seafood in
-                                            Delhi straight to the consumer via seamless cold chain logistics,
-                                            maintaining the freshness & quality of the fish and seafood. 
+                                        procuring directly from the fishermen and providing fresh fish & seafood in
+                                        Delhi straight to the consumer via seamless cold chain logistics,
+                                        maintaining the freshness & quality of the fish and seafood.
                                     </div>
                                 </div>
                             </div>
@@ -604,8 +641,6 @@
                     </div>
                 </div>
         </footer>
-
-
     </div>
 </body>
 
