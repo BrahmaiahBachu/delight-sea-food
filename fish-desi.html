@@ -38,6 +38,20 @@
             });
         });
     </script>
+    <style>
+        .shop-block {
+            display: none;
+        }
+
+        .active {
+            display: block !important;
+            text-decoration: none !important;
+        }
+
+        .nav-link {
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 
@@ -49,61 +63,318 @@
             <div class="d-flex">
 
                 <img src="images/new-images/fish-logo.png" alt="" class="logo1">
-
-
-
                 <div class="d-flex">
                     <nav class="m-auto">
                         <ul class="d-flex m-auto list-none ul-style">
                             <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2"> <a href="know-your-sea-food.html" class="header-list">Know your Sea Food
-                                </a></li>
+                            <li class="px-2 "> <a href="know-your-sea-food.html" class="header-list dropbtn">Know your
+                                    Sea Food
+                                </a>
+
+                            </li>
                             <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2 current"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
+                            <li class="px-2 current dropdown"><a href="fish-desi.html" class="header-list">Fish Desi</a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('apollo-fish')">
+                                        Apollo Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('basa-fish')">Basa
+                                        Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('rohu-fish')">Rohu
+                                        Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('catla')">Catla</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('tilapia')">Tilapia</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('roopchand-fish')">Roopchand Fish</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('atlantic-salmon')">Atlantic Salmon</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('crab')">Crab</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('lobster')">Lobster</a>
+
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('bommidayalu')">Bommidayalu</a>
+
+                                </div>
+                            </li>
                             <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
                             <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
                             <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
-
-
-
-
             </div>
             <div class="logo-header">
                 Delight Sea Food
                 </h1>
             </div>
             <div class="over-hidden p-1">
-              
             </div>
         </header>
-        <section id="content">
+        <section id="content over-hidden">
             <div class="div-main" id="">
                 <div class="div-main-indent">
                     <div class="light-banner">
                         <div class="container_24">
                             <div class="wrapper">
-                               
-                             
+                                <!-- 1 -->
+                                <div id='apollo-fish' class=" shop-block active py-3">
+                                    <div class="box-shadow">
+                                        <div class="header-colour px-2 pt-2">
+                                            Apollo Fish
+                                        </div>
+                                        <div class="grid-1 d-flex py-3">
+                                            <div class="container1 d-flex">
+                                                <div class=" px-2">
+                                                    <div id="">
+                                                        <img src="images/new-images/Desi_Fish//Apollo.jpg" alt=""
+                                                            class="w-fill">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container1 px-2">
+                                                <div class="box-allignment">
+                                                    <div class="product-description">
+                                                        <div class="mb-4">
+                                                            Apollo Fish Fillet is a ready-to-cook option favoured for
+                                                            its tender texture and rich taste, ideal for a variety of
+                                                            dishes. This fillet is especially popular in spicy,
+                                                            flavourful recipes, making it perfect for frying, grilling,
+                                                            or baking. Known for its versatility, Apollo fish fillet can
+                                                            be easily seasoned, marinated, or coated in batter to suit
+                                                            different culinary styles. Enjoy the convenience of a fillet
+                                                            that requires minimal preparation and pairs well with a
+                                                            range of spices and sauces.
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Price
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : Rs.400/-
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Net
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 1 KG with frozen condition 50:50 ratio
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Product
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : India
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div id='basa-fish' class=" shop-block py-3">
+                                    <div class="box-shadow">
+                                        <div class="header-colour px-2 pt-2">
+                                            Basa Fish
+                                        </div>
+                                        <div class="grid-1 d-flex py-3">
+                                            <div class="container1 d-flex">
+                                                <div class=" px-2">
+                                                    <div id="">
+                                                        <img src="images/new-images/Desi_Fish/Basa.jpg" alt=""
+                                                            class="w-fill">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container1 m-auto px-2">
+                                                <div class="box-allignment">
+                                                    <div class="product-description">
+                                                        <div class="mb-4">
+                                                            Fresh Basa is crafted fresh out of the Indian coastal
+                                                            waters, No chemicals, no preservatives or antibiotics,
+                                                            conserved right to maintain the finest quality and taste.
+                                                            Having a diet plan to follow or just for the love of
+                                                            consuming fish daily, richness and nutrients delivered to
+                                                            your platter with our fine textured basa fish fillet. From
+                                                            sourcing to delivery we ensure that everything is done in
+                                                            the best temperature, thus ensuring quality and freshness at
+                                                            every step. Bred in the exclusive farms and passed through
+                                                            stringent quality checks, our team of experts ensure that
+                                                            you give your tastebuds a superlative fishy experience. Easy
+                                                            to cook and hassle-free, you can toss it in your
+                                                            favourite sauces, marinate with all the fascinating herbs
+                                                            and spices and just fry roast or bake - do what your tummy
+                                                            asks for and have a tasteful meal with our basa fish
+                                                            fillet.
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Price
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : Rs.400/-
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Net
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 1 KG with frozen condition 50:50 ratio
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Product
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : India
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                             
+                                    </div>
+                                </div>
+                                <!-- 2 -->
+                                <div id='rohu-fish' class=" shop-block py-3">
+                                    <div class="box-shadow">
+                                        <div class="header-colour px-2 pt-2">
+                                            Rohu Fish
+                                        </div>
+                                        <div class="grid-1 d-flex py-3">
+                                            <div class="container1 d-flex">
+                                                <div class=" px-2">
+                                                    <div id="">
+                                                        <img src="images/new-images/Desi_Fish/Rohu.jpg" alt=""
+                                                            class="w-fill">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container1 px-2">
+                                                <div class="box-allignment">
+                                                    <div class="product-description">
+                                                        <div class="mb-4">
+                                                            Fresh Rohu Fish enriched with a handsome amount of protein.
+                                                            Packed with Omega 3 fatty acids and vitamins A, B, and C.
+                                                            You should eat Rohu at least once a week. Rohu is a river
+                                                            fish. It is considered to be a rich source of vitamin C,
+                                                            which is essential for maintaining good health. It keeps
+                                                            diseases like cold and cough at bay and prevents other
+                                                            diseases related to it.
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Price
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : Rs.400/-
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Net
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 1 KG without Ice
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Minimum Order
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 5 KG
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                               
+                                    </div>
+                                </div>
+                                <div id='catla' class=" shop-block py-3">
+                                    <div class="box-shadow">
+                                        <div class="header-colour px-2 pt-2">
+                                            Catla
+                                        </div>
+                                        <div class="grid-1 d-flex py-3">
+                                            <div class="container1 d-flex">
+                                                <div class=" px-2">
+                                                    <div id="">
+                                                        <img src="images/new-images/Desi_Fish/Catlet.jpg" alt=""
+                                                            class="w-fill">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container1 px-2">
+                                                <div class="box-allignment">
+                                                    <div class="product-description">
+                                                        <div class="mb-4">
+                                                            No Antibiotic No Preservative It is one of the popular
+                                                            freshwater fish. The taste of Catla is just superb, the most
+                                                            famous in south. And its meat is full of nutrients like
+                                                            amino acids, minerals, vitamins, and the right amount of
+                                                            sulfur which helps the assimilation of nutrients. It is most
+                                                            famous in north India and Bengal. We use
+                                                            the best quality packaging material to ensure that your fish
+                                                            is fresh, soft, and ready to use even after a couple of
+                                                            weeks.
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Price
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : Rs.400/-
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Net
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 1 KG without Ice
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Minimum Order
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 5 KG
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-                           
+                                    </div>
+                                </div>
 
-                               
-                           fish-desi
-                              
-
-                            </div><!--the end of wrapper-->
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                function filterItems(category) {
+                    document.querySelectorAll('.shop-block').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    document.getElementById(category).classList.add('active');
+                }
+            </script>
         </section>
         <footer class="main-footer-new transform-none">
             <div class="auto-container">
@@ -113,12 +384,13 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="">
                                     <figure class="footer-logo"><a href="index.html"><img
-                                                src="images/new-images/fish-logo.png" width="30%" class="d-flex" alt=""></a></figure>
+                                                src="images/new-images/fish-logo.png" width="30%" class="d-flex"
+                                                alt=""></a></figure>
                                     <div class="footer-text-1">
                                         We delivers value by adopting the best global practices by
-                                            procuring directly from the fishermen and providing fresh fish & seafood in
-                                            Delhi straight to the consumer via seamless cold chain logistics,
-                                            maintaining the freshness & quality of the fish and seafood. 
+                                        procuring directly from the fishermen and providing fresh fish & seafood in
+                                        Delhi straight to the consumer via seamless cold chain logistics,
+                                        maintaining the freshness & quality of the fish and seafood.
                                     </div>
                                 </div>
                             </div>

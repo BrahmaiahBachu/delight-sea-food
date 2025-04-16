@@ -5,7 +5,7 @@
     <title>Order Fresh Fish Online | India Fish Company</title>
     <meta charset="utf-8">
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="icon" href="assets/images/fish-logo.png" type="image/x-icon">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;400;500;700;800;900&amp;display=swap"
@@ -47,6 +47,20 @@
             });
         });
     </script>
+    <style>
+        .shop-block {
+            display: none;
+        }
+
+        .active {
+            display: block !important;
+            text-decoration: none !important;
+        }
+
+        .nav-link {
+            cursor: pointer;
+        }
+    </style>
 
 </head>
 
@@ -65,54 +79,123 @@
                     <nav class="m-auto">
                         <ul class="d-flex m-auto list-none ul-style">
                             <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2"> <a href="know-your-sea-food.html" class="header-list">Know your Sea Food
-                                </a></li>
+                            <li class="px-2 "> <a href="know-your-sea-food.html" class="header-list dropbtn">Know your
+                                    Sea Food
+                                </a>
+
+                            </li>
                             <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
-                            <li class="px-2 current"><a href="prawns.html" class="header-list">Prawns</a></li>
+                            <li class="px-2 "><a href="fish-desi.html" class="header-list">Fish Desi</a>
+
+                            </li>
+                            <li class="px-2 current dropdown"><a href="prawns.html" class="header-list">Prawns</a>
+                                <div class="dropdown-content">
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('apollo-fish')">
+                                        Apollo Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('basa-fish')">Basa
+                                        Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('rohu-fish')">Rohu
+                                        Fish</a>
+                                    <a href="#" class="header-list nav-link" onclick="filterItems('catla')">Catla</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('tilapia')">Tilapia</a>
+                                    <a href="#" class="header-list nav-link"
+                                        onclick="filterItems('lobster')">Lobster</a>
+                                </div>
+                            </li>
                             <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
                             <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
                         </ul>
-                      </nav>
+                    </nav>
                 </div>
-
-
-
-
             </div>
             <div class="logo-header">
                 Delight Sea Food
                 </h1>
             </div>
             <div class="over-hidden p-1">
-              
+
             </div>
         </header>
-        <section id="content">
+        <section id="content over-hidden ">
             <div class="div-main" id="">
                 <div class="div-main-indent">
                     <div class="light-banner">
                         <div class="container_24">
                             <div class="wrapper">
-                               
-                             
+                                <!-- 1 -->
+                                <div id='apollo-fish' class=" shop-block active py-3">
+                                    <div class="box-shadow">
+                                        <div class="header-colour px-2 pt-2">
+                                            Apollo Fish
+                                        </div>
+                                        <div class="grid-1 d-flex py-3">
+                                            <div class="container1 d-flex">
+                                                <div class=" px-2">
+                                                    <div id="">
+                                                        <img src="images/new-images/Desi_Fish//Apollo.jpg" alt=""
+                                                            class="w-fill">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="container1 px-2">
+                                                <div class="box-allignment">
+                                                    <div class="product-description">
+                                                        <div class="mb-4">
+                                                            Apollo Fish Fillet is a ready-to-cook option favoured for
+                                                            its tender texture and rich taste, ideal for a variety of
+                                                            dishes. This fillet is especially popular in spicy,
+                                                            flavourful recipes, making it perfect for frying, grilling,
+                                                            or baking. Known for its versatility, Apollo fish fillet can
+                                                            be easily seasoned, marinated, or coated in batter to suit
+                                                            different culinary styles. Enjoy the convenience of a fillet
+                                                            that requires minimal preparation and pairs well with a
+                                                            range of spices and sauces.
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Price
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : Rs.400/-
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Net
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : 1 KG with frozen condition 50:50 ratio
+                                                            </div>
+                                                        </div>
+                                                        <div class="d-flex">
+                                                            <div class="product-description-rate">
+                                                                Product
+                                                            </div>
+                                                            <div class="product-description-rate-1">
+                                                                : India
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
 
-
-                             
-
-                               
-
-                           
-
-                               
-                           prawns
-                              
-
-                            </div><!--the end of wrapper-->
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+            <script>
+                function filterItems(category) {
+                    document.querySelectorAll('.shop-block').forEach(item => {
+                        item.classList.remove('active');
+                    });
+                    document.getElementById(category).classList.add('active');
+                }
+            </script>
         </section>
         <footer class="main-footer-new transform-none">
             <div class="auto-container">
@@ -122,12 +205,13 @@
                             <div class="col-lg-4 col-md-6 col-sm-12">
                                 <div class="">
                                     <figure class="footer-logo"><a href="index.html"><img
-                                                src="images/new-images/fish-logo.png" width="30%" class="d-flex" alt=""></a></figure>
+                                                src="images/new-images/fish-logo.png" width="30%" class="d-flex"
+                                                alt=""></a></figure>
                                     <div class="footer-text-1">
                                         We delivers value by adopting the best global practices by
-                                            procuring directly from the fishermen and providing fresh fish & seafood in
-                                            Delhi straight to the consumer via seamless cold chain logistics,
-                                            maintaining the freshness & quality of the fish and seafood. 
+                                        procuring directly from the fishermen and providing fresh fish & seafood in
+                                        Delhi straight to the consumer via seamless cold chain logistics,
+                                        maintaining the freshness & quality of the fish and seafood.
                                     </div>
                                 </div>
                             </div>

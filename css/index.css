@@ -1379,3 +1379,11 @@ li.dropdown {
  
 
 }
+
+.bg-color{
+  background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
+  display: flex
+;
+    flex-direction: row;
+    justify-content: space-around;
+}
