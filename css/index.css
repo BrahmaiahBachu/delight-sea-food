@@ -181,7 +181,7 @@
      margin: 0 0 20px 0;
      text-align: center;
      font-family: "Damion", cursive;
-     color: #fff;
+     color: yellow;
      font-size: 60px;
      font-weight: bold;
    }
@@ -1350,3 +1350,32 @@ li.dropdown {
   display: block;
 }
    
+
+.product-description{
+ 
+
+  line-height: 26px;
+    color: #1d1d1d;
+    font-size: 22px;
+}
+
+.product-description-rate{
+ 
+  font-size: 24px;
+  line-height: 26px;
+  
+  font-weight: 800;
+  padding-right: 6px;
+
+}
+
+
+.product-description-rate-1{
+ 
+  font-size: 22px;
+  line-height: 26px;
+  padding-left: 6px;
+  
+ 
+
+}
