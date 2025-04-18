@@ -1382,6 +1382,8 @@
      line-height: 26px;
      font-size: 22px;
      color: darkcyan;
+     text-align: justify;
+     width: 97%;
    }
 
    .product-description-rate {
@@ -1415,7 +1417,10 @@
      font-size: 18px;
      margin-top: 2rem;
    }
-
+   .bg-color .nav-link{
+    font-weight: bolder;
+    color: #ffffff !important;
+   }
    .bg-clr {
     background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
     display: flex;
