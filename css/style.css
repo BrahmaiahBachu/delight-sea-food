@@ -263,7 +263,7 @@ h4 {
 .top-0-2 {
   margin-top: 8px;
 }
-.top-1 {
+.top-2 {
   margin-top: 3px;
 }
 .top-2 {
@@ -629,7 +629,7 @@ header {
   cursor: auto;
 }
 
-.prev {
+/* .prev {
   background: url(../images/prev-button.png) 0 bottom no-repeat;
   width: 26px;
   height: 48px;
@@ -652,7 +652,7 @@ header {
 }
 .next:hover {
   background-position: 0 0;
-}
+} */
 /**********************************index-1*********************************/
 .bg-right-2 {
   background: url(../images/bg-right.jpg) 282px 0 repeat-y;

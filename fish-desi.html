@@ -27,17 +27,6 @@
     <script src="js/superfish.js"></script>
     <script src="js/jquery.hoverIntent.minified.js"></script>
     <script src="js/jquery.roundabout.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            $('.roundabout').roundabout({
-                btnNext: ".next",
-                btnPrev: ".prev",
-                duration: 600,
-                reflect: false,
-                shape: 'square'
-            });
-        });
-    </script>
     <style>
         .shop-block {
             display: none;
@@ -58,46 +47,19 @@
 <body>
 
     <div class="" id="">
-
         <header>
             <div class="d-flex">
-
                 <img src="images/new-images/fish-logo.png" alt="" class="logo1">
                 <div class="d-flex">
                     <nav class="m-auto">
                         <ul class="d-flex m-auto list-none ul-style">
                             <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2 "> <a href="know-your-sea-food.html" class="header-list dropbtn">Know your
+                            <li class="px-2 "> <a href="know-your-sea-food.html" class="header-list">Know your
                                     Sea Food
                                 </a>
-
                             </li>
                             <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2 current dropdown"><a href="fish-desi.html" class="header-list">Fish Desi</a>
-                                <div class="dropdown-content">
-                                    <a href="#" class="header-list nav-link" onclick="filterItems('apollo-fish')">
-                                        Apollo Fish</a>
-                                    <a href="#" class="header-list nav-link" onclick="filterItems('basa-fish')">Basa
-                                        Fish</a>
-                                    <a href="#" class="header-list nav-link" onclick="filterItems('rohu-fish')">Rohu
-                                        Fish</a>
-                                    <a href="#" class="header-list nav-link" onclick="filterItems('catla')">Catla</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('mackerel-fish')">Mackerel Fish</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('roopchand-fish')">Roopchand Fish</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('white-pamfret')">White Pamfret</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('black-pomfret')">Black Pomfret</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('koramenu-fish')">Koramenu-fish</a>
-
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('bommidayalu')">Bommidayalu</a>
-
-                                </div>
-                            </li>
+                            <li class="px-2 current"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
                             <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
                             <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
                             <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
@@ -109,19 +71,41 @@
                 Delight Sea Food
                 </h1>
             </div>
-            <div class="over-hidden p-1">
+            <div class="over-hidden p-2">
             </div>
         </header>
         <section id="content over-hidden">
             <div class="div-main" id="">
                 <div class="div-main-indent">
-                    <div class="light-banner">
+                    <div class="">
                         <div class="container_24">
-                            <div class="">
+                            <div class="wrapper">
+                                <div class="bg-color">
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('apollo-fish')">
+                                        Apollo Fish</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('basa-fish')">Basa
+                                        Fish</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('rohu-fish')">Rohu
+                                        Fish</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('catla')">Catla</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('mackerel-fish')">Mackerel
+                                        Fish</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('roopchand-fish')">Roopchand
+                                        Fish</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('white-pamfret')">White
+                                        Pamfret</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('black-pomfret')">Black
+                                        Pomfret</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('koramenu-fish')">Koramenu
+                                        Fish</a>
+
+                                    <a href="#" class="p-1 nav-link"
+                                        onclick="filterItems('bommidayalu')">Bommidayalu</a>
+                                </div>
                                 <!-- 1 -->
                                 <div id='apollo-fish' class=" shop-block active py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Apollo Fish
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -181,7 +165,7 @@
                                 <!-- 2 -->
                                 <div id='basa-fish' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Basa Fish
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -248,7 +232,7 @@
                                 <!-- 3 -->
                                 <div id='rohu-fish' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Rohu Fish
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -306,7 +290,7 @@
                                 <!-- catla -->
                                 <div id='catla' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Catla
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -366,7 +350,7 @@
                                 <!-- Mackerel Fish -->
                                 <div id='mackerel-fish' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Mackerel Fish
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -414,7 +398,7 @@
                                 <!-- Roopchand Fish -->
                                 <div id='roopchand-fish' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Roopchand Fish
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -475,7 +459,7 @@
                                 <!-- White Pamfret-->
                                 <div id='white-pamfret' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             White Pamfret
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -533,7 +517,7 @@
                                 <!-- Black Pomfret-->
                                 <div id='black-pomfret' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Black Pomfret
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -584,7 +568,7 @@
                                 <!-- Koramenu Fish-->
                                 <div id='koramenu-fish' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Koramenu Fish
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -629,10 +613,10 @@
                                         </div>
                                     </div>
                                 </div>
-                                  <!-- Bommidayalu-->
-                                  <div id='bommidayalu' class=" shop-block py-3">
+                                <!-- Bommidayalu-->
+                                <div id='bommidayalu' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Bommidayalu
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -648,12 +632,12 @@
                                                 <div class="box-allignment">
                                                     <div class="product-description">
                                                         <div class="mb-4">
-                                                            Koramenu or Murrel fish is one of the popular fresh water
-                                                            and tasty fish in India. It’s an excellent source of omega-3
-                                                            fatty acids, protein. Regular consumption of Koramenu may
-                                                            prevent heart diseases and improve skin and hair glow. And
-                                                            its also useful for brain development, eye site improvement
-                                                            and control diabetes.
+                                                            The fish has a generous amount of spices mixed with
+                                                            aromatics inside it. and these spices make for a brilliant
+                                                            burst of flavors inside your mouth fish is believed to be
+                                                            the source behind omega 3 fatty acids inside your body.
+                                                            These fatty acids make for a good flow of blood, and reduce
+                                                            chances of inflammation and heart diseases.
                                                         </div>
                                                         <div class="d-flex">
                                                             <div class="product-description-rate">

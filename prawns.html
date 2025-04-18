@@ -36,17 +36,7 @@
     <script src="js/superfish.js"></script>
     <script src="js/jquery.hoverIntent.minified.js"></script>
     <script src="js/jquery.roundabout.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            $('.roundabout').roundabout({
-                btnNext: ".next",
-                btnPrev: ".prev",
-                duration: 600,
-                reflect: false,
-                shape: 'square'
-            });
-        });
-    </script>
+
     <style>
         .shop-block {
             display: none;
@@ -79,7 +69,7 @@
                     <nav class="m-auto">
                         <ul class="d-flex m-auto list-none ul-style">
                             <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2 "> <a href="know-your-sea-food.html" class="header-list dropbtn">Know your
+                            <li class="px-2 "> <a href="know-your-sea-food.html" class="header-list">Know your
                                     Sea Food
                                 </a>
 
@@ -88,20 +78,7 @@
                             <li class="px-2 "><a href="fish-desi.html" class="header-list">Fish Desi</a>
 
                             </li>
-                            <li class="px-2 current dropdown"><a href="prawns.html" class="header-list">Prawns</a>
-                                <div class="dropdown-content">
-                                    <a href="#" class="header-list nav-link" onclick="filterItems('tiger-prawns')">
-                                        Black Tiger Prawns</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('vennamei')">Vennamei</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('indian-prawns')">Indian Tiger Prawns</a>
-                                    <a href="#" class="header-list nav-link" onclick="filterItems('scampi')">Scampi</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('lobsters')">Lobsters</a>
-                                    <a href="#" class="header-list nav-link"
-                                        onclick="filterItems('cuban-lobsters')">Cuban Lobsters</a>
-                                </div>
+                            <li class="px-2 current"><a href="prawns.html" class="header-list">Prawns</a>
                             </li>
                             <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
                             <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
@@ -113,20 +90,33 @@
                 Delight Sea Food
                 </h1>
             </div>
-            <div class="over-hidden p-1">
+            <div class="over-hidden p-2">
 
             </div>
         </header>
         <section id="content over-hidden ">
             <div class="div-main" id="">
                 <div class="div-main-indent">
-                    <div class="light-banner">
+                    <div class="">
                         <div class="container_24">
-                            <div class="">
+                            <div class="wrapper">
+                                <div class="bg-color">
+
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('tiger-prawns')">
+                                        Tiger Prawns</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('vennamei')">Vennamei</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('indian-prawns')">Indian Tiger
+                                        Prawns</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('scampi')">Scampi</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('lobsters')">Lobsters</a>
+                                    <a href="#" class="p-1 nav-link" onclick="filterItems('cuban-lobsters')">Cuban
+                                        Lobsters</a>
+
+                                </div>
                                 <!-- Tiger Prawns -->
                                 <div id='tiger-prawns' class=" shop-block active py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Tiger Prawns
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -206,7 +196,7 @@
                                 <!-- Vennamei -->
                                 <div id='vennamei' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Vennamei
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -273,11 +263,11 @@
 
                                     </div>
                                 </div>
-                                <!-- Black Indian Tiger Prawns -->
+                                <!-- Indian Tiger Prawns -->
                                 <div id='indian-prawns' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
-                                            Black Indian Tiger Prawns
+                                        <div class="header-clr px-2 pt-2">
+                                            Indian Tiger Prawns
                                         </div>
                                         <div class="grid-1 d-flex py-3">
                                             <div class="container1 d-flex">
@@ -345,8 +335,8 @@
                                 <!-- Scampi -->
                                 <div id='scampi' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
-                                            Scampi (we need to dis)
+                                        <div class="header-clr px-2 pt-2">
+                                            Scampi
                                         </div>
                                         <div class="grid-1 d-flex py-3">
                                             <div class="container1 d-flex">
@@ -362,11 +352,11 @@
                                                     <div class="product-description">
                                                         <div class="mb-4">
                                                             Scampi, a small member of the lobster family recognized by
-                                                            its pink and orange banded shell from the burrows in New
-                                                            Zealand seafloor, 200 to 800 meters deep. It has a rare
-                                                            delicacy and is highly sought after. Its white, meaty flesh
-                                                            is sweet and delicate and is lovelily baked, barbequed,
-                                                            marinated, or served raw as sashimi.
+                                                            its pink and orange banded shell from the burrows in India
+                                                            seafloor, 200 to 800 meters deep. It has a rare delicacy and
+                                                            is highly sought after. Its white, meaty flesh is sweet and
+                                                            delicate and is lovelily baked, barbequed, marinated, or
+                                                            served raw as sashimi.
                                                         </div>
                                                         <div class="mb-4">
                                                             Scampi involves lightly frying smaller crustaceans such as
@@ -416,7 +406,7 @@
                                 <!-- Lobsters -->
                                 <div id='lobsters' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Lobsters
                                         </div>
                                         <div class="grid-1 d-flex py-3">
@@ -494,7 +484,7 @@
                                 <!-- Cuban Lobsters -->
                                 <div id='cuban-lobsters' class=" shop-block py-3">
                                     <div class="">
-                                        <div class="header-colour px-2 pt-2">
+                                        <div class="header-clr px-2 pt-2">
                                             Cuban Lobsters
                                         </div>
                                         <div class="grid-1 d-flex py-3">
