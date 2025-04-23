@@ -96,6 +96,36 @@
      padding-top: 1rem;
    }
 
+   .pt-1 {
+    padding-top: 0.5rem;
+  }
+
+  .header-clr-1 {
+    color: blueviolet;
+    position: relative;
+    display: block;
+    font-size: 30px;
+    line-height: 26px;
+    font-family: "Damion", cursive;
+    font-weight: 800;
+    margin-bottom: 13px;
+    text-transform: uppercase;
+  }
+
+  .text-size-1 {
+    line-height: 30px;
+    font-family: cursive;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    width: 100%;
+    color: darkcyan
+  }
+
+  .box-allignment {
+    padding: 0px 20px 15px 20px;
+}
+
    .header-clr {
      color: blueviolet;
      position: relative;
@@ -122,7 +152,7 @@
      margin: 0 0 20px 0;
      text-align: center;
      font-family: "Damion", cursive;
-     color: gold;
+     color: yellow;
      font-size: 60px;
      font-weight: bold;
    }
@@ -380,6 +410,18 @@
    .pb-6 {
      padding-bottom: 3rem;
    }
+
+   .pb-3 {
+    padding-bottom: 1.5rem;
+  }
+
+  .font-size-22{
+    font-size: 22px;
+  }
+
+  .lh-30{
+    line-height: 30px;
+  }
 
    .main-footer-new .footer-top .contact-widget .info li {
      position: relative;
@@ -895,8 +937,14 @@
 
    .contact-info-section {
      position: relative;
-     padding: 120px 0px;
+     padding: 0 0 50px 0;
      background: #fff;
+   }
+
+   .whatsApp-icon{
+    color: #45d7e5;
+    font-size: 22px;
+    padding: 1.5rem 0 1.5rem 0;
    }
 
    .contact-info-section .inner-container {
