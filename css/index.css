@@ -62,6 +62,14 @@
    .p-2 {
      padding: 1rem;
    }
+   
+   .pr-3{
+    padding-right: 1.5rem;
+   }
+
+   .p-3 {
+    padding: 1.5rem;
+  }
 
    .p-1 {
      padding: .5rem;
@@ -831,7 +839,6 @@
      font-size: 22px;
      color: darkcyan;
      text-align: justify;
-     width: 97%;
    }
 
    .product-description-rate {
@@ -846,42 +853,6 @@
      line-height: 26px;
      padding-left: 6px;
    }
-
-   .bg-color {
-     background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-around;
-     height: 80px;
-     flex-wrap: wrap;
-     font-size: 18px;
-     margin-top: 2rem;
-   }
-
-   .bg-color :hover>a {
-     font-weight: bolder;
-     color: #45d7e5;
-   }
-
-   .bg-color-1 :hover>a {
-     font-weight: bolder;
-     color: #45d7e5;
-   }
-
-   .bg-clr {
-     background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
-     display: flex;
-
-     justify-content: space-around;
-     font-size: 24px;
-     margin-top: 2rem;
-   }
-
-   .bg-clr :hover>a {
-     font-weight: bolder;
-     color: #45d7e5;
-   }
-
 
    .img-text-clr {
      color: blue;
@@ -909,16 +880,6 @@
 
    .lh-40 {
      line-height: 40px;
-   }
-
-   .bg-color-1 {
-     background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
-     display: flex;
-     flex-direction: column;
-     height: 70px;
-     flex-wrap: wrap;
-     font-size: 18px;
-     margin-top: 2rem;
    }
 
    .google-map-section {
@@ -1246,3 +1207,57 @@
      -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
      transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
    }
+
+
+
+
+.tabs ul.nav {
+    list-style-image: none;
+    /* display: inline-block; */
+    overflow: hidden;
+}
+
+.tabs ul.nav li {
+    font-size: 18px;
+    line-height: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 6px 10px 7px 0;
+    display: inline-block;
+}
+
+.tabs ul.nav li a {
+    color: #ffffff;
+    font-weight: bolder;
+    padding-left: 20px;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.tabs ul.nav li.selected a, .tabs ul.nav li:hover a {
+ font-weight: bolder;
+  color: #45d7e5;
+}
+
+
+.bg-clr {
+  background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
+  display: flex;
+
+  justify-content: space-around;
+  font-size: 24px;
+  margin-top: 2rem;
+}
+
+.bg-clr :hover>a {
+ 
+}
+
+.bg-clr-1{
+  background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
+  display: flex;
+  flex-direction: column;
+  height: 92px;
+  flex-wrap: wrap;
+  font-size: 18px;
+  margin-top: 2rem;
+}
