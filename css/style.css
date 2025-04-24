@@ -94,7 +94,7 @@ h2 {
   color: #4f4f4f;
   line-height: 29px;
   font-weight: normal;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .h2 {
   font-size: 24px;
@@ -104,7 +104,7 @@ h2 {
   font-weight: normal;
   padding-left: 29px;
   background: url(../images/arrow-h2.png) left 5px no-repeat;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 .h2 span {
   color: #fe6217;
