@@ -881,8 +881,9 @@
    }
 
    .product-description {
-     line-height: 26px;
-     font-size: 22px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
      color: darkcyan;
      text-align: justify;
    }
@@ -895,8 +896,8 @@
    }
 
    .product-description-rate-1 {
-     font-size: 22px;
-     line-height: 26px;
+     font-size: 20px;
+     line-height: 30px;
      padding-left: 6px;
    }
 
