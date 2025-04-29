@@ -26,28 +26,15 @@
     <link href="assets/css/responsive.css" rel="stylesheet">
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/new-index.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/grid_24.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/superfish.css">
     <link rel="icon" href="images/new-images/fish-logo.png" type="image/x-icon">
     <script src="js/jquery-1.7.min.js"></script>
     <script src="js/jquery.easing.1.3.js"></script>
     <script src="js/superfish.js"></script>
     <script src="js/jquery.hoverIntent.minified.js"></script>
     <script src="js/jquery.roundabout.js"></script>
-    <script>
-        jQuery(document).ready(function () {
-            $('.roundabout').roundabout({
-                btnNext: ".next",
-                btnPrev: ".prev",
-                duration: 600,
-                reflect: false,
-                shape: 'square'
-            });
-        });
-    </script>
-
 </head>
 
 <body>
@@ -55,36 +42,38 @@
     <div class="" id="">
 
         <header>
-            <div class="d-flex">
-
+            <div class="navbar">
                 <a href="index.html">
-    <img src="images/new-images/fish-logo.png" alt="" class="logo1">
-</a>
-
-
-
-                <div class="d-flex">
-                    <nav class="m-auto">
-                        <ul class="d-flex m-auto list-none ul-style">
-                            <li class="px-2"><a href="index.html" class="header-list">Home</a></li>
-                            <li class="px-2"> <a href="know-your-sea-food.html" class="header-list">Know your Sea Food
-                                </a></li>
-                            <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
-                            <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
-                            <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
-                            <li class="px-2 current"><a href="contact-us.html" class="header-list">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
-
-
-
-
+                    <img src="images/new-images/fish-logo.png" alt="" class="logo1"></a>
+                <nav>
+                    <ul class="ml-4 ">
+                        <li><a href="index.html" >Home</a></li>
+                        <li> <a href="know-your-sea-food.html">Know your Sea Food</a></li>
+                        <li> <a href="imports.html">Imports</a></li>
+                        <li><a href="fish-desi.html">Fish Desi</a></li>
+                        <li><a href="prawns.html">Prawns</a></li>
+                        <li><a href="shell-fish.html">Shell Fish</a></li>
+                        <li><a href="contact-us.html" class="current">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header">Contact Us</div>
+                <img src="./images//new-images/menu.png" class="menu-icon" onclick="openNav()" />
             </div>
             <div class="logo-header">
                 Delight Sea Food
-                </h1>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="know-your-sea-food.html">Know your Sea
+                        Food</a>
+                    <a href="imports.html">Imports</a>
+                    <a href="fish-desi.html">Fish Desi</a>
+                    <a href="prawns.html">Prawns</a>
+                    <a href="shell-fish.html">Shell Fish</a>
+                    <a href="contact-us.html" class="current">Contact Us</a>
+                </div>
             </div>
             <div class="over-hidden p-1">
 
@@ -98,7 +87,7 @@
                             <div class="wrapper">
                                 <div class="text-center p-3">
                                     <a target="_blank" href="https://wa.me/9916833533">
-                                        <img src="images/new-images/WhatsApp.png" width="10%"/>
+                                        <img src="/images/new-images/WhatsApp.png" width="10%"/>
                                         <div class="whatsApp-icon">WhatsApp</div>
                                     </a>
                                 </div>
@@ -240,7 +229,15 @@
    <!-- main-js -->
    <script src="js/script.js"></script>
 
+   <script>
+    function openNav() {
+        document.getElementById("myNav").style.width = "100%";
+    }
 
+    function closeNav() {
+        document.getElementById("myNav").style.width = "0%";
+    }
+</script>
     </div>
 </body>
 

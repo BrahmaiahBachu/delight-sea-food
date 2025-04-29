@@ -20,6 +20,7 @@
 
 
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/new-index.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="icon" href="images/new-images/fish-logo.png" type="image/x-icon">
     <script src="js/jquery-1.7.min.js"></script>
@@ -38,33 +39,38 @@
 </head>
 
 <body>
-
-    <div class="" id="">
-
+    <div>
         <header>
-            <div class="d-flex">
-
-                <a href="index.html">
-    <img src="images/new-images/fish-logo.png" alt="" class="logo1">
-</a>
-                <div class="d-flex">
-                    <nav class="m-auto">
-                        <ul class="d-flex m-auto list-none ul-style">
-                            <li class="px-2"><a href="index.html" class="header-list">Home</a></li>
-                            <li class="px-2"> <a href="know-your-sea-food.html" class="header-list">Know your Sea
-                                    Food</a></li>
-                            <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
-                            <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
-                            <li class="px-2 current"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
-                            <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="navbar">
+                <a href="index.html"><img src="images/new-images/fish-logo.png" alt="" class="logo1"></a>
+                <nav>
+                    <ul class="ml-4 ">
+                        <li><a href="index.html">Home</a></li>
+                        <li> <a href="know-your-sea-food.html">Know your Sea Food</a></li>
+                        <li> <a href="imports.html">Imports</a></li>
+                        <li><a href="fish-desi.html">Fish Desi</a></li>
+                        <li><a href="prawns.html">Prawns</a></li>
+                        <li><a href="shell-fish.html" class="current">Shell Fish</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header">Shell Fish</div>
+                <img src="./images//new-images/menu.png" class="menu-icon" onclick="openNav()" />
             </div>
             <div class="logo-header">
                 Delight Sea Food
-                </h1>
+            </div>
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="know-your-sea-food.html">Know your Sea Food</a>
+                    <a href="imports.html">Imports</a>
+                    <a href="fish-desi.html">Fish Desi</a>
+                    <a href="prawns.html">Prawns</a>
+                    <a href="shell-fish.html" class="current">Shell Fish</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
             </div>
             <div class="over-hidden">
 
@@ -86,22 +92,19 @@
                         <div class="mt-2 mb-2">
                             <!-- clams -->
                             <div id="clams" class="tab-content">
-                                <div class="pb-6">
-                                    <div class="header-clr-1 pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Clams
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Shell_Fish/clams.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Shell_Fish/clams.jpg" alt="" class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
-                                            <div class="">
-                                                <div class="product-description">
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
                                                     <div class="mb-2">
                                                         Indulge in the succulent and savory flavor of Clams. These
                                                         plump and juicy clams are perfect for impressing guests or
@@ -112,38 +115,10 @@
                                                         pasta dishes, cioppino, soups -- or just plain steamed with
                                                         garlic and drawn butter!
                                                     </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Count
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 20+
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.1000/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG with ice 50:50 ratio
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Product
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Import
-                                                        </div>
-                                                    </div>
+                                                    <div> Count : 20+</div>
+                                                    <div> Price : Rs.700/-</div>
+                                                    <div> Net : 1 KG with ice 50:50 ratio</div>
+                                                    <div> Product : Import</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -152,60 +127,30 @@
                             </div>
                             <!-- Crab -->
                             <div id="crab" class="tab-content">
-                                <div class="pb-6">
-                                    <div class="header-clr-1 pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Crab
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Shell_Fish/Red_Crab.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Shell_Fish/Red_Crab.jpg" alt=""
+                                                    class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
-                                            <div class="">
-                                                <div class="product-description">
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
                                                     <div class="mb-2">
                                                         Soft-shell crab is a culinary term for crabs that have a
                                                         soft exoskeleton and are edible as a whole as well.Popular
                                                         dish – fried soft shell crab and also used for sushi (Shelf
                                                         life 365 days – Frozen) Country Of Origin – Indonesia
                                                     </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Count
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 10+
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.1000/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG with ice 50:50 ratio
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Product
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Import
-                                                        </div>
-                                                    </div>
+                                                    <div> Count : 10+</div>
+                                                    <div> Price : Rs.1000/-</div>
+                                                    <div> Net : 1 KG with ice 50:50 ratio</div>
+                                                    <div> Product : Import</div>
                                                 </div>
                                             </div>
                                         </div>
@@ -214,123 +159,92 @@
                             </div>
                             <!-- Normal Crab -->
                             <div id="normal-crab" class="tab-content">
-                                <div class="pb-3">
-                                    <div class="header-clr-1 pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Normal Crab
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Shell_Fish/Normal_Crab.jpg" alt=""
-                                                        class="w-fill">
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Shell_Fish/Normal_Crab.jpg" alt=""
+                                                    class="w-fill">
+                                            </div>
+                                        </div>
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
+                                                    <div class="mb-2">
+                                                        We understand that cleaning crabs can be a time-consuming
+                                                        and messy task, which is why we offer Sea Crab with Shell
+                                                        Open - a convenient solution for all seafood lovers. With
+                                                        the shell already expertly cracked open, our Sea Crab Meat
+                                                        allows you to skip the arduous process of getting to the
+                                                        succulent meat hidden inside. We've taken care of the dirty
+                                                        work, saving you time and effort in the kitchen. Now you can
+                                                        easily access the premium-quality crab meat without the
+                                                        hassle of breaking through the tough shell.
+                                                    </div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
-                                            <div class="">
-                                                <div class="product-description">
-                                                    We understand that cleaning crabs can be a time-consuming
-                                                    and messy task, which is why we offer Sea Crab with Shell
-                                                    Open - a convenient solution for all seafood lovers. With
-                                                    the shell already expertly cracked open, our Sea Crab Meat
-                                                    allows you to skip the arduous process of getting to the
-                                                    succulent meat hidden inside. We've taken care of the dirty
-                                                    work, saving you time and effort in the kitchen. Now you can
-                                                    easily access the premium-quality crab meat without the
-                                                    hassle of breaking through the tough shell.
-                                                </div>
+                                    </div>
+                                    <div class="product-description px-2 pb-2">
+                                        <div class="mb-2">
+                                            Our Sea Crab
+                                            Meat is carefully selected from the freshest catches,
+                                            ensuring a superior level of flavor and tenderness in every
+                                            bite. The meat is juicy, sweet, and packed with natural
+                                            sea-infused goodness.
+                                        </div>
+                                        <div class="mb-2">
+                                            <div class="product-description-rate mb-2">
+                                                Nutrient Benefits :
                                             </div>
+                                            Indulge in the nutritional bounty of our
+                                            Fresh Sea Crab Whole, packed with protein essential for
+                                            muscle building and maintenance. Rich in omega-3 fatty
+                                            acids, vitamin B12, and selenium, this delectable crustacean
+                                            offers a holistic approach to improving overall health and
+                                            preventing chronic conditions. While savoring its rich
+                                            flavors and exquisite textures, relish in the benefits of
+                                            these vital nutrients. However, it's important to note its
+                                            sodium content, with 376 mg in a 3-ounce portion. Order to
+                                            enjoy unparalleled freshness and nutritional richness of our
+                                            Fresh Sea Crab Whole.
                                         </div>
-                                    </div>
-                                </div>
-                                <div class="product-description">
-                                    <div class="mb-2">
-                                        Our Sea Crab
-                                        Meat is carefully selected from the freshest catches,
-                                        ensuring a superior level of flavor and tenderness in every
-                                        bite. The meat is juicy, sweet, and packed with natural
-                                        sea-infused goodness.
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="product-description-rate mb-2">
-                                            Nutrient Benefits :
+                                        <div class="mb-2">
+                                            <div class="product-description-rate mb-2">
+                                                Storage Information :
+                                            </div>
+                                            Storage Information: Store under refrigeration at 18°C or
+                                            below, in hygienic conditions. All our fish & seafood is
+                                            passed through safety & quality checks to ensure the
+                                            highest/safest quality.
                                         </div>
-                                        Indulge in the nutritional bounty of our
-                                        Fresh Sea Crab Whole, packed with protein essential for
-                                        muscle building and maintenance. Rich in omega-3 fatty
-                                        acids, vitamin B12, and selenium, this delectable crustacean
-                                        offers a holistic approach to improving overall health and
-                                        preventing chronic conditions. While savoring its rich
-                                        flavors and exquisite textures, relish in the benefits of
-                                        these vital nutrients. However, it's important to note its
-                                        sodium content, with 376 mg in a 3-ounce portion. Order to
-                                        enjoy unparalleled freshness and nutritional richness of our
-                                        Fresh Sea Crab Whole.
-                                    </div>
-                                    <div class="mb-2">
-                                        <div class="product-description-rate mb-2">
-                                            Storage Information :
-                                        </div>
-                                        Storage Information: Store under refrigeration at 18°C or
-                                        below, in hygienic conditions. All our fish & seafood is
-                                        passed through safety & quality checks to ensure the
-                                        highest/safest quality.
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="product-description-rate">
-                                            Count
-                                        </div>
-                                        <div class="product-description-rate-1">
-                                            : 6+
-                                        </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="product-description-rate">
-                                            Price
-                                        </div>
-                                        <div class="product-description-rate-1">
-                                            : Rs.600/-
-                                        </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="product-description-rate">
-                                            Net
-                                        </div>
-                                        <div class="product-description-rate-1">
-                                            : 1 KG with ice 50:50 ratio
-                                        </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="product-description-rate">
-                                            Product
-                                        </div>
-                                        <div class="product-description-rate-1">
-                                            : India
-                                        </div>
-
+                                        <div> Count : 6+</div>
+                                        <div> Price : Rs.600/-</div>
+                                        <div> Net : 1 KG with ice 50:50 ratio</div>
+                                        <div> Product : Import</div>
                                     </div>
                                 </div>
                             </div>
                             <!-- Blue Crab -->
                             <div id="blue-crab" class="tab-content">
-                                <div class="pb-3">
-                                    <div class="header-clr-1 pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Blue Crab
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Shell_Fish/Blue_Crab.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Shell_Fish/Blue_Crab.jpg" alt=""
+                                                    class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
-                                            <div class="">
-                                                <div class="product-description">
-                                                    <div class="">
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
+                                                    <div class="mb-2">
                                                         We understand that cleaning crabs can be a time-consuming
                                                         and messy task, which is why we offer Sea Crab with Shell
                                                         Open - a convenient solution for all seafood lovers. With
@@ -345,19 +259,9 @@
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-                                <div>
-                                    <div class="product-description">
+                                    <div class="product-description px-2 pb-2">
                                         <div class="mb-2">
-                                            We understand that cleaning crabs can be a time-consuming
-                                            and messy task, which is why we offer Sea Crab with Shell
-                                            Open - a convenient solution for all seafood lovers. With
-                                            blue shell already expertly cracked open, our Sea Crab Meat
-                                            allows you to skip the arduous process of getting to the
-                                            succulent meat hidden inside. We've taken care of the dirty
-                                            work, saving you time and effort in the kitchen. Now you can
-                                            easily access the premium-quality crab meat without the
-                                            hassle of breaking through the tough shell. Our Sea Crab
+                                            Our Sea Crab
                                             Meat is carefully selected from the freshest catches,
                                             ensuring a superior level of flavor and tenderness in every
                                             bite. The meat is juicy, sweet, and packed with natural
@@ -388,38 +292,10 @@
                                             passed through safety & quality checks to ensure the
                                             highest/safest quality.
                                         </div>
-                                        <div class="d-flex">
-                                            <div class="product-description-rate">
-                                                Count
-                                            </div>
-                                            <div class="product-description-rate-1">
-                                                : 6+
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="product-description-rate">
-                                                Price
-                                            </div>
-                                            <div class="product-description-rate-1">
-                                                : Rs.1200/-
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="product-description-rate">
-                                                Net
-                                            </div>
-                                            <div class="product-description-rate-1">
-                                                : 1 KG with ice 50:50 ratio
-                                            </div>
-                                        </div>
-                                        <div class="d-flex">
-                                            <div class="product-description-rate">
-                                                Product
-                                            </div>
-                                            <div class="product-description-rate-1">
-                                                : Import
-                                            </div>
-                                        </div>
+                                        <div> Count : 6+</div>
+                                        <div> Price : Rs.1200/-</div>
+                                        <div> Net : 1 KG with ice 50:50 ratio</div>
+                                        <div> Product : Import</div>
                                     </div>
                                 </div>
                             </div>
@@ -437,8 +313,8 @@
                     <div class="row-footer ">
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="">
-                                <figure class="footer-logo"><a href="index.html"><img
-                                            src="images/new-images/fish-logo.png" width="30%" class="d-flex" alt=""></a>
+                                <figure class="footer-logo">
+                                    <a href="index.html"><img src="images/new-images/fish-logo.png" width="30%" class="d-flex" alt=""></a>
                                 </figure>
                                 <div class="footer-text-1">
                                     We delivers value by adopting the best global practices by
@@ -459,20 +335,15 @@
                                     <li>
                                         <i class="flaticon-envelope"></i>
                                         <p class="text-footer">Email</p>
-                                        <h5 class="text-justify"><a
-                                                href="mailto:support@delightseafood.com ">support@delightseafood.com
-                                            </a></h5>
+                                        <h5 class="text-justify"><a href="mailto:support@delightseafood.com ">support@delightseafood.com </a></h5>
                                     </li>
                                     <li>
                                         <i class="flaticon-maps-and-flags"></i>
                                         <p class="text-footer">Address</p>
                                         <h5 class="text-start">H.No.3-9,RTC Colony, Madinaguda, Hyderabad-500049</h5>
                                     </li>
-
                                 </ul>
-
                             </div>
-
                         </div>
                         <div class="col-lg-4 col-md-6 col-sm-12">
                             <div class="footer-widget newsletter-widget">
@@ -497,13 +368,18 @@
                         <h5>&copy;2025 Copy Right <a href="index.html"> Delight Sea Food </a>. All rights reserved.
                         </h5>
                     </div>
-
                 </div>
             </div>
     </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
-
-
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
     </div>
 </body>
 
