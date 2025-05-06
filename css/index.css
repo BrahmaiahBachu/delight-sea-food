@@ -39,7 +39,7 @@
    }
 
    .box-allignment-1 {
-     padding: 0px 20px 15px 20px;
+     padding: 0px 0px 15px 20px;
    }
 
    .box-allignment-2 {
@@ -58,6 +58,10 @@
    .mt-4 {
      margin-top: 2rem;
    }
+
+   .pl-2 {
+    padding-left: 1rem;
+  }
 
    .p-2 {
      padding: 1rem;
@@ -82,6 +86,7 @@
    .grid-1 {
      width: 950px;
      padding: auto;
+     display: flex;
    }
 
    .py-3 {
@@ -104,9 +109,8 @@
     color: blueviolet;
     position: relative;
     display: block;
-    font-size: 30px;
+    font-size: 24px;
     line-height: 26px;
-    font-family: "Damion", cursive;
     font-weight: 800;
     margin-bottom: 13px;
     text-transform: uppercase;
@@ -114,7 +118,6 @@
 
   .text-size-1 {
     line-height: 30px;
-    font-family: cursive;
     font-style: normal;
     font-weight: 400;
     font-size: 20px;
@@ -130,9 +133,8 @@
      color: blueviolet;
      position: relative;
      display: block;
-     font-size: 38px;
+     font-size: 30px;
      line-height: 26px;
-     font-family: "Damion", cursive;
      font-weight: 800;
      margin-bottom: 13px;
      text-transform: uppercase;
@@ -140,7 +142,6 @@
 
    .text-size {
      line-height: 30px;
-     font-family: cursive;
      font-style: normal;
      font-weight: 400;
      font-size: 25px;
@@ -149,12 +150,12 @@
    }
 
    .logo-header {
-     margin: 0 0 20px 0;
      text-align: center;
-     font-family: "Damion", cursive;
      color: yellow;
-     font-size: 60px;
+     font-size: 40px;
      font-weight: bold;
+     margin-top: -1.5rem;
+     margin-bottom: 1.5rem;
    }
 
    .shop-selection {
@@ -224,21 +225,7 @@
     flex-direction: column;
   }
 
-   .navbar {
-     width: 100%;
-     display: flex;
-     flex-flow: row wrap;
-     justify-content: space-between;
-     right: -90px;
-     flex-wrap: wrap;
-     bottom: 10px;
-     align-items: flex-end;
-     font-size: 20 px;
-     padding: 0px;
-     line-height: 0px;
-     padding-left: 50px;
-     padding-right: 50px;
-   }
+
 
    .list-none {
      list-style: none;
@@ -291,7 +278,7 @@
      padding: 0;
      width: 620px;
      position: relative;
-     z-index: 10;
+     z-index: 1;
      align-items: center;
    }
 
@@ -311,8 +298,7 @@
    }
 
    .header-list {
-     color: #fff;
-     text-shadow: 1px 1px #53dcf5;
+     color: blueviolet;
 
    }
 
@@ -347,7 +333,7 @@
 
    .ul-style>li.current>a,
    .ul-style>li:hover>a {
-     color: #45d7e5;
+     color: darkcyan
    }
 
    .ul-style>li {
@@ -882,8 +868,9 @@
    }
 
    .product-description {
-     line-height: 26px;
-     font-size: 22px;
+    line-height: 30px;
+    font-size: 20px;
+    font-weight: 400;
      color: darkcyan;
      text-align: justify;
    }
@@ -896,8 +883,8 @@
    }
 
    .product-description-rate-1 {
-     font-size: 22px;
-     line-height: 26px;
+     font-size: 20px;
+     line-height: 30px;
      padding-left: 6px;
    }
 
@@ -1298,12 +1285,9 @@
 
   justify-content: space-around;
   font-size: 24px;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
 }
 
-.bg-clr :hover>a {
- 
-}
 
 .bg-clr-1{
   background: url(../images/bg-li-li-ul.jpg) 0 0 repeat-x #07a5bf;
@@ -1312,5 +1296,20 @@
   height: 92px;
   flex-wrap: wrap;
   font-size: 18px;
-  margin-top: 2rem;
+  margin-top: 0.5rem;
+}
+
+.mln-5{
+  margin-left: -2.5rem;
+}
+
+.menu-icon{
+  width: 2.5rem;
+  cursor: pointer; 
+}
+
+.navbar{
+  width: 100%;
+  display: flex;
+  align-items: center;
 }

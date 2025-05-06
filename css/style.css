@@ -17,7 +17,6 @@ header,
 hgroup,
 keygen,
 meter,
-nav,
 output,
 progress,
 section,
@@ -613,7 +612,7 @@ header {
   padding: 0;
   width: 620px;
   position: relative;
-  z-index: 10;
+  z-index: 1;
 }
 
 .roundabout-moveable-item {

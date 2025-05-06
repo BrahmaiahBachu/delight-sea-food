@@ -17,10 +17,9 @@
     <!-- Stylesheets -->
     <link href="css/flaticon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/new-index.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/grid_24.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/superfish.css">
     <link rel="icon" href="images/new-images/fish-logo.png" type="image/x-icon">
 
     <script src="js/jquery-1.7.min.js"></script>
@@ -39,33 +38,40 @@
 </head>
 
 <body>
-    <div class="" id="">
+    <div>
         <header>
-            <div class="d-flex">
-                <a href="index.html">
-    <img src="images/new-images/fish-logo.png" alt="" class="logo1">
-</a>
-                <div class="d-flex">
-                    <nav class="m-auto">
-                        <ul class="d-flex m-auto list-none ul-style">
-                            <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2 current"> <a href="know-your-sea-food.html" class="header-list">Know your
-                                    Sea Food
-                                </a></li>
-                            <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
-                            <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
-                            <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
-                            <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div class="navbar">
+                <a href="index.html"> <img src="images/new-images/fish-logo.png" alt="" class="logo1"></a>
+                <nav>
+                    <ul class="ml-4 ">
+                        <li><a href="index.html">Home</a></li>
+                        <li> <a href="know-your-sea-food.html" class="current">Know your Sea Food</a></li>
+                        <li> <a href="imports.html">Imports</a></li>
+                        <li><a href="fish-desi.html">Fish Desi</a></li>
+                        <li><a href="prawns.html">Prawns</a></li>
+                        <li><a href="shell-fish.html">Shell Fish</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header">Know your Sea Food</div>
+                <img src="./images//new-images/menu.png" class="menu-icon" onclick="openNav()" />
             </div>
             <div class="logo-header">
                 Delight Sea Food
-                </h1>
             </div>
-            <div class="over-hidden p-2">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="know-your-sea-food.html" class="current">Know your Sea Food</a>
+                    <a href="imports.html">Imports</a>
+                    <a href="fish-desi.html">Fish Desi</a>
+                    <a href="prawns.html">Prawns</a>
+                    <a href="shell-fish.html">Shell Fish</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="over-hidden">
 
             </div>
         </header>
@@ -74,7 +80,6 @@
                 <div class="div-main-indent">
                     <div class="container_24 tabs">
                         <div class="wrapper">
-
                             <ul class="nav bg-clr-1">
                                 <li class="selected"><a href="#prawns" class="p-1"> Prawns</a> </li>
                                 <li> <a href="#rohu" class="p-1">Rohu</a></li>
@@ -96,10 +101,10 @@
                             <!-- Prawns -->
                             <div id="prawns" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Prawns
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1 ">
                                             <div class=" p-2">
                                                 <img src="images/new-images/know-your-sea-food/Prawns.jpg" alt=""
@@ -107,9 +112,8 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Prawns are delicious and are full of
                                                         flavors with a hint of
                                                         semi-sweet and salty taste to them. They are quite tender
@@ -127,10 +131,10 @@
                             <!-- Catla -->
                             <div id="catla" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Catla
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/Catla-Fish.jpg" alt=""
@@ -138,15 +142,13 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Catla is a fish with large and broad
                                                         head, a large protruding lower jaw, and upturned mouth. It
                                                         has large, greyish scales on its dorsal side with a whitish
                                                         belly. It reaches up to 182 cm (6.0 ft) in length and 38.6
                                                         kg (85 lb) in weight.
-
                                                     </p>
                                                     <p class="text-justify mt-2"> Catla is a surface and midwater
                                                         feeder.
@@ -164,10 +166,10 @@
                             <!-- Pomfret -->
                             <div id="pomfret" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Pomfret
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/pomfert.jpg" alt=""
@@ -175,38 +177,35 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Fish is believed to be the source behind
                                                         omega 3 fatty acids
                                                         inside your body. These fatty acids make for a good flow of
                                                         blood, and reduce chances of inflammation and heart
                                                         diseases.
                                                     </p>
+                                                    <p class="text-justify">Pomfret isn’t just flavorful
+                                                        though, it
+                                                        is also quite
+                                                        healthy. Its omega-3 fatty acid content makes it spectacular
+                                                        for the brain development of children. It also is rich in
+                                                        vitamin A, vitamin B1, and vitamin D, which helps in
+                                                        preventing strokes.
+                                                    </p>
                                                 </div>
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="text-size">
-                                        <p class="text-justify p-2">Pomfret isn’t just flavorful
-                                            though, it
-                                            is also quite
-                                            healthy. Its omega-3 fatty acid content makes it spectacular
-                                            for the brain development of children. It also is rich in
-                                            vitamin A, vitamin B1, and vitamin D, which helps in
-                                            preventing strokes.
-                                        </p>
                                     </div>
                                 </div>
                             </div>
                             <!-- Bommidayalu -->
                             <div id="bommidayalu" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Bommidayalu
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/bommidayalu.jpg" alt=""
@@ -214,14 +213,12 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-2">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">The fish has a generous amount of spices
                                                         mixed with aromatics
                                                         inside it, and these spices make for a brilliant burst of
                                                         flavors inside your mouth
-
                                                         Fish is believed to be the source behind omega 3 fatty acids
                                                         inside your body. These fatty acids make for a good flow of
                                                         blood, and reduce chances of inflammation and heart
@@ -230,18 +227,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                             <!-- octopus-->
                             <div id="octopus" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Octopus
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/octopus.jpg" alt=""
@@ -249,9 +244,8 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Octopus is a unique and flavorful
                                                         seafood that’s loved in
                                                         many cuisines, especially Mediterranean and Asian. It has a
@@ -265,8 +259,8 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-size">
-                                        <p class="text-justify p-2">  It can be grilled,
+                                    <div class=" text-size-1">
+                                        <p class="text-justify p-2"> It can be grilled,
                                             sautéed, braised, or even served in sushi, providing a
                                             versatile ingredient that pairs well with various sauces and
                                             seasonings!
@@ -277,10 +271,10 @@
                             <!-- lobster -->
                             <div id="lobster" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Lobster
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/lobster.webp" alt=""
@@ -288,9 +282,8 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-2">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Lobster is luxurious, delicious and the
                                                         perfect food for a
                                                         special occasion. Lobster has a sweeter, comparatively less
@@ -304,18 +297,16 @@
                                                 </div>
                                             </div>
                                         </div>
-
-
                                     </div>
                                 </div>
                             </div>
                             <!-- crab -->
                             <div id="crab" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Crab
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/crab.jpg" alt=""
@@ -323,16 +314,14 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">“Crab is a type of crustacean, which are
                                                         cold-water animals
                                                         that can survive in salt and fresh water. Crab tastes like a
                                                         soft, salty and squishy white meat that is not quite the
                                                         same as chicken, or steak. It definitely tastes like fish,
                                                         but without the “fishy” after taste or smell.
-
                                                         Most people season it with butter, salt, or Old Bay which
                                                         can greatly alter the taste in a pleasurable manner.”
                                                     </p>
@@ -345,57 +334,49 @@
                             <!-- atlantic-salmon -->
                             <div id="atlantic-salmon" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Atlantic Salmon
                                     </div>
                                     <div class="grid-1">
-                                        <div class="grid-1 d-flex">
-                                            <div class="container">
-                                                <div class="p-2">
-                                                    <img src="images/new-images/know-your-sea-food/salmon.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/know-your-sea-food/salmon.jpg" alt=""
+                                                    class="w-fill">
                                             </div>
-                                            <div class="container1 m-auto">
-                                                <div class="box-allignment-2">
-
-                                                    <div class="text-size">
-                                                        <p class="text-justify">Fish is the most favorable seafood.
-                                                            Chef’s and also people
-                                                            use different ways of cooking to serve this meal. Fish fry
-                                                            is most known. It is delicious, crispy, and spicy fish which
-                                                            can be a great appetizer or a side dish in the feed.”
-
-                                                        </p>
-
-                                                    </div>
-                                                </div>
-                                            </div>
-
-
                                         </div>
-                                        <div class="text-size">
-                                            <p class="text-justify p-2"> Fillets of Atlantic salmon are
-                                                pleasing
-                                                to the eye and
-                                                should be used with recipes that show off the fish. With the
-                                                Atlantic salmon’s delicate flavor, avoid accompanying
-                                                flavors that overpower the fish. A light dill-and-yogurt or
-                                                cucumber-dill sauce works well, and sliced cucumbers and new
-                                                potatoes are ideal companions.”
-                                            </p>
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
+                                                    <p class="text-justify">Fish is the most favorable seafood.
+                                                        Chef’s and also people
+                                                        use different ways of cooking to serve this meal. Fish fry
+                                                        is most known. It is delicious, crispy, and spicy fish which
+                                                        can be a great appetizer or a side dish in the feed.”
+                                                    </p>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-
+                                    <div class=" text-size-1">
+                                        <p class="text-justify px-2"> Fillets of Atlantic salmon are
+                                            pleasing
+                                            to the eye and
+                                            should be used with recipes that show off the fish. With the
+                                            Atlantic salmon’s delicate flavor, avoid accompanying
+                                            flavors that overpower the fish. A light dill-and-yogurt or
+                                            cucumber-dill sauce works well, and sliced cucumbers and new
+                                            potatoes are ideal companions.”
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- roopchand-fish -->
                             <div id="roopchand-fish" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Roopchand Fish
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/roopchand.jpg" alt=""
@@ -403,14 +384,12 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Roopchand fish, which is known as
                                                         Chinese Pomfret fish, is
                                                         also a seawater fish. It has a flattened body with a deeply
                                                         forked tail.
-
                                                     </p>
                                                     <p class="text-justify mt-2"> It has a high amount of Omega-3.
                                                         The
@@ -418,33 +397,30 @@
                                                         Omega-3 is fish. It has Vitamin D and proteins, too. These
                                                         two are significant nutrition for the body. Roopchand fish
                                                         carries iron and magnesium, too.
-
                                                     </p>
-                                                    
                                                 </div>
                                             </div>
                                         </div>
-                                        
                                     </div>
-                                    <div class="text-size">
-                                        <p class="text-justify p-2"> To place these nutrition in
+                                    <div class=" text-size-1">
+                                        <p class="text-justify px-2"> To place these nutrition in
                                             your diet with plates of seafood, you can choose roopchand
                                             fish. Fish is the most favorable seafood.
                                             Chef’s and also people
                                             use different ways of cooking to serve this meal. Fish fry
                                             is most known. It is delicious, crispy, and spicy fish which
                                             can be a great appetizer or a side dish in the feed.
-                                        </p></div>
-
+                                        </p>
+                                    </div>
                                 </div>
                             </div>
                             <!-- Tilapia -->
                             <div id="tilapia" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Tilapia
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/tilapia .jpg" alt=""
@@ -453,37 +429,35 @@
                                         </div>
                                         <div class="container1 m-auto">
                                             <div class="box-allignment">
-
-                                                <div class="text-size">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Tilapia is a mild-flavored, white fish
                                                         that’s popular for its
                                                         versatility in cooking. It’s a freshwater fish that is low
                                                         in fat and high in protein, making it a healthy option for a
                                                         variety of dishes. Due to its mild taste and flaky texture,
                                                         tilapia can be baked, grilled, fried, or even used in soups
-                                                        and stews. 
+                                                        and stews.
                                                     </p>
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="text-size">
-                                        <p class="text-justify p-2">
+                                    <div class=" text-size-1">
+                                        <p class="text-justify px-2">
                                             It's also a great source of essential nutrients
                                             like vitamin B12, selenium, and phosphorus, making it a
                                             nutritious choice for any meal!
                                         </p>
-
                                     </div>
                                 </div>
                             </div>
                             <!-- basa -->
                             <div id="basa-fish" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Basa Fish
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class="p-2">
                                                 <img src="images/new-images/know-your-sea-food/Basa.png" alt=""
@@ -491,9 +465,8 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">Basa is a type of Catfish and therefore
                                                         have a rather
                                                         flattened head which is broader than it is long with barbels
@@ -511,55 +484,48 @@
                             <!-- king -->
                             <div id="kingfish" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Kingfish
                                     </div>
-                                    <div class="grid-1 d-flex">
-                                        <div class=" d-flex">
-                                            <div class="container">
-                                                <div class="p-2">
-                                                    <img src="images/new-images/know-your-sea-food/king-fish.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/know-your-sea-food/king-fish.jpg" alt=""
+                                                    class="w-fill">
                                             </div>
-                                            <div class="container1 m-auto">
-                                                <div class="box-allignment">
-
-                                                    <div class="text-size">
-                                                        <p class="text-justify">Kingfish belongs to the mackerel family.
-                                                            Another name Surmai
-                                                            is a delectable fish known for its flavour and texture.
-                                                            Known also as Indo-Pacific king mackerel and seer fish. Seer
-                                                            fish is considered a delicacy due to its taste and texture.
-                                                            Meaty with large bones, surmai makes for great fish steaks.
-
-                                                        </p>
-                                                    </div>
-                                                </div>
-                                            </div>
-
                                         </div>
-                                       
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+
+                                                <div class=" text-size-1">
+                                                    <p class="text-justify">Kingfish belongs to the mackerel family.
+                                                        Another name Surmai
+                                                        is a delectable fish known for its flavour and texture.
+                                                        Known also as Indo-Pacific king mackerel and seer fish. Seer
+                                                        fish is considered a delicacy due to its taste and texture.
+                                                        Meaty with large bones, surmai makes for great fish steaks.
+
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="text-size">
-                                        <p class="text-justify p-2">
+                                    <div class=" text-size-1">
+                                        <p class="text-justify px-2">
                                             It’s best enjoyed shallow or deep-fried. But in some
                                             cuisines, surmai is cooked in a thick gravy of tomato,
                                             onion, spices and served with rice.
                                         </p>
-
                                     </div>
-
-
                                 </div>
                             </div>
                             <!-- Rohu -->
                             <div id="rohu" class="tab-content">
                                 <div class="box-shadow">
-                                    <div class="header-clr px-2 pt-2">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Rohu
                                     </div>
-                                    <div class="grid-1 d-flex">
+                                    <div class="grid-1">
                                         <div class="container1">
                                             <div class=" p-2">
                                                 <img src="images/new-images/know-your-sea-food/rohu-fish.jpg" alt=""
@@ -567,9 +533,8 @@
                                             </div>
                                         </div>
                                         <div class="container1 m-auto">
-                                            <div class="box-allignment-1">
-
-                                                <div class="text-size">
+                                            <div class="box-allignment">
+                                                <div class=" text-size-1">
                                                     <p class="text-justify">The rohu is a large, silver-colored fish
                                                         of typical cyprinid
                                                         shape, with a conspicuously arched head. The rohu occurs in
@@ -583,10 +548,6 @@
                                 </div>
                             </div>
                         </div>
-
-
-
-
                         <div class="clear"></div>
                     </div>
                 </div>
@@ -664,6 +625,15 @@
                 </div>
             </div>
     </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
     </div>
 </body>
 

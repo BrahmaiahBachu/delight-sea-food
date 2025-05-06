@@ -17,10 +17,9 @@
     <!-- Stylesheets -->
     <link href="css/flaticon.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" media="screen" href="css/index.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/new-index.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/style.css">
     <link rel="stylesheet" type="text/css" media="screen" href="css/grid_24.css">
-    <link rel="stylesheet" type="text/css" media="screen" href="css/superfish.css">
     <link rel="icon" href="images/new-images/fish-logo.png" type="image/x-icon">
 
     <script src="js/jquery-1.7.min.js"></script>
@@ -43,31 +42,40 @@
     <div class="" id="">
 
         <header>
-            <div class="d-flex">
-
+            <div class="navbar">
                 <a href="index.html">
-    <img src="images/new-images/fish-logo.png" alt="" class="logo1">
-</a>
-                <div class="d-flex">
-                    <nav class="m-auto">
-                        <ul class="d-flex m-auto list-none ul-style">
-                            <li class="px-2"><a href="home.html" class="header-list">Home</a></li>
-                            <li class="px-2"><a href="know-your-sea-food.html" class="header-list">Know your Sea
-                                    Food</a></li>
-                            <li class="px-2"> <a href="imports.html" class="header-list">Imports</a></li>
-                            <li class="px-2 current"><a href="fish-desi.html" class="header-list">Fish Desi</a></li>
-                            <li class="px-2"><a href="prawns.html" class="header-list">Prawns</a></li>
-                            <li class="px-2"><a href="shell-fish.html" class="header-list">Shell Fish</a></li>
-                            <li class="px-2"><a href="contact-us.html" class="header-list">Contact Us</a></li>
-                        </ul>
-                    </nav>
-                </div>
+                    <img src="images/new-images/fish-logo.png" alt="" class="logo1"></a>
+                <nav>
+                    <ul class="ml-4 ">
+                        <li><a href="index.html">Home</a></li>
+                        <li> <a href="know-your-sea-food.html">Know your Sea Food</a></li>
+                        <li> <a href="imports.html">Imports</a></li>
+                        <li><a href="fish-desi.html" class="current">Fish Desi</a></li>
+                        <li><a href="prawns.html">Prawns</a></li>
+                        <li><a href="shell-fish.html">Shell Fish</a></li>
+                        <li><a href="contact-us.html">Contact Us</a></li>
+                    </ul>
+                </nav>
+                <div class="header">Fish Desi</div>
+                <img src="./images//new-images/menu.png" class="menu-icon" onclick="openNav()" />
             </div>
             <div class="logo-header">
                 Delight Sea Food
-                </h1>
             </div>
-            <div class="over-hidden p-2">
+            <div id="myNav" class="overlay">
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                <div class="overlay-content">
+                    <a href="index.html">Home</a>
+                    <a href="know-your-sea-food.html">Know your Sea
+                        Food</a>
+                    <a href="imports.html">Imports</a>
+                    <a href="fish-desi.html" class="current">Fish Desi</a>
+                    <a href="prawns.html">Prawns</a>
+                    <a href="shell-fish.html">Shell Fish</a>
+                    <a href="contact-us.html">Contact Us</a>
+                </div>
+            </div>
+            <div class="over-hidden">
 
             </div>
         </header>
@@ -93,22 +101,20 @@
                         <div class="mt-2 mb-4">
                             <!-- 1 -->
                             <div id='apollo-fish' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Apollo Fish
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish//Apollo.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish//Apollo.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
+                                                <div class=" product-description">
                                                     <div class="mb-2">
                                                         Apollo Fish Fillet is a ready-to-cook option favoured for
                                                         its tender texture and rich taste, ideal for a variety of
@@ -120,55 +126,39 @@
                                                         that requires minimal preparation and pairs well with a
                                                         range of spices and sauces.
                                                     </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.350/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG with frozen condition 50:50
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Product
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : India
-                                                        </div>
-                                                    </div>
+                                                   
+
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="product-description px-2 pb-2">
+                                       
+                                       
+                                        <div> Price : Rs.350/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                        <div> Product : India </div>
                                     </div>
 
                                 </div>
                             </div>
+                            
                             <!-- 2 -->
                             <div id='basa-fish' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Basa Fish
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish/Basa.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish/Basa.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 m-auto px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
+                                                <div class=" product-description">
                                                     <div class="mb-2">
                                                         Fresh Basa is crafted fresh out of the Indian coastal
                                                         waters, No chemicals, no preservatives or antibiotics,
@@ -182,65 +172,48 @@
                                                         stringent quality checks, our team of experts ensure that
                                                         you give your tastebuds a superlative fishy experience.
                                                     </div>
-                                                
+                                                   
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-<div class="product-description">
-    <div class="mb-2 mt-2">
-  Easy
-        to cook and hassle-free, you can toss it in your
-        favourite sauces, marinate with all the fascinating herbs
-        and spices and just fry roast or bake - do what your tummy
-        asks for and have a tasteful meal with our basa fish
-        fillet.
-    </div>
-    <div class="d-flex">
-        <div class="product-description-rate">
-            Price
-        </div>
-        <div class="product-description-rate-1">
-            : Rs.350/-
-        </div>
-    </div>
-    <div class="d-flex">
-        <div class="product-description-rate">
-            Net
-        </div>
-        <div class="product-description-rate-1">
-            : 1 KG with frozen condition 50:50 ratio
-        </div>
-    </div>
-    <div class="d-flex">
-        <div class="product-description-rate">
-            Product
-        </div>
-        <div class="product-description-rate-1">
-            : India
-        </div>
-    </div>
-</div>
+                                    <div class="product-description px-2 pb-2">
+                                        <div class="mb-2">
+                                            Easy
+                                            to cook and hassle-free, you can toss it in your
+                                            favourite sauces, marinate with all the fascinating herbs
+                                            and spices and just fry roast or bake - do what your tummy
+                                            asks for and have a tasteful meal with our basa fish
+                                            fillet.
+                                        </div>
+                                       
+                                        <div> Price : Rs.350/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                        <div> Product : India </div>
+                                    </div>
+
                                 </div>
                             </div>
+                        
+                           
                             <!-- 3 -->
+                          
                             <div id='rohu-fish' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Rohu Fish
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish/Rohu.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish/Rohu.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
+                                                <div class=" product-description">
                                                     <div class="mb-2">
                                                         Fresh Rohu Fish enriched with a handsome amount of protein.
                                                         Packed with Omega 3 fatty acids and vitamins A, B, and C.
@@ -250,57 +223,43 @@
                                                         diseases like cold and cough at bay and prevents other
                                                         diseases related to it.
                                                     </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.400/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG without Ice
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Minimum Order
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 5 KG
-                                                        </div>
-                                                    </div>
+                                                   
+
                                                 </div>
                                             </div>
                                         </div>
+                                    </div>
+                                    <div class="product-description px-2 pb-2">
+                        
+                                       
+                                        <div> Price : Rs.400/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                        <div> Product : India </div>
                                     </div>
 
                                 </div>
                             </div>
+
+                            
+                         
                             <!-- catla -->
                             <div id='catla' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Catla
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish/Catlet.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container1">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish/Catlet.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
-                                                    <div class="mb-2">
-                                                        No Antibiotic No Preservative It is one of the popular
+
+                                                <div class=" text-size-1">
+                                                    <p class="text-justify">           No Antibiotic No Preservative It is one of the popular
                                                         freshwater fish. The taste of Catla is just superb, the most
                                                         famous in south. And its meat is full of nutrients like
                                                         amino acids, minerals, vitamins, and the right amount of
@@ -309,106 +268,78 @@
                                                         the best quality packaging material to ensure that your fish
                                                         is fresh, soft, and ready to use even after a couple of
                                                         weeks.
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.400/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG without Ice
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Minimum Order
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 5 KG
-                                                        </div>
-                                                    </div>
+                                                    </p>
+                                                 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class=" text-size-1 px-2 pb-2">
+                                
 
+                                        <div> Price : Rs.400/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                        <div> Minimum Order : 5 KG </div>
+                                    </div>
                                 </div>
                             </div>
+                           
                             <!-- Mackerel Fish -->
                             <div id='mackerel-fish' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Mackerel Fish
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish/Macerel.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container1">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish/Macerel.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
-                                                    <div class="mb-2">
-                                                        Fresho Mackerel Fish is an oily fish, it is a rich source of
+
+                                                <div class=" text-size-1">
+                                                    <p class="text-justify">    Fresho Mackerel Fish is an oily fish, it is a rich source of
                                                         omega-3 fatty acids A mackerel is a sea fish with a dark,
                                                         patterned back The extra fat enhances the flavour of the
                                                         fish and ensures that it's packed with protein, vitamin D
                                                         and lots of healthy omega.
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.500/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG with frozen condition 50:50 
-                                                        </div>
-                                                    </div>
+                                                    </p>
+                                                 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class=" text-size-1 px-2 pb-2">
+                                
 
+                                        <div> Price : Rs.500/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                       
+                                    </div>
                                 </div>
                             </div>
+                           
                             <!-- Roopchand Fish -->
                             <div id='roopchand-fish' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         Roopchand Fish
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish/Roop_Chand.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container1">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish/Roop_Chand.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
-                                                    <div class="mb-2">
-                                                        Roopchand Fish - Steaks are thick, meaty slices of this
+
+                                                <div class=" text-size-1">
+                                                    <p class="text-justify">      Roopchand Fish - Steaks are thick, meaty slices of this
                                                         freshwater fish, prized for its mild flavour and tender
                                                         texture. These steaks are perfect for grilling, baking, or
                                                         pan-searing, allowing for a variety of cooking methods that
@@ -418,57 +349,39 @@
                                                         recipes or contemporary dishes, Roopchand Fish Steaks offer
                                                         a satisfying seafood experience, making them a popular
                                                         choice among seafood enthusiasts.
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Price
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : Rs.400/-
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Net
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 1 KG
-                                                        </div>
-                                                    </div>
-                                                    <div class="d-flex">
-                                                        <div class="product-description-rate">
-                                                            Minimum Order
-                                                        </div>
-                                                        <div class="product-description-rate-1">
-                                                            : 5 KG
-                                                        </div>
-                                                    </div>
+                                                    </p>
+                                                 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class=" text-size-1 px-2 pb-2">
+                                
 
+                                        <div> Price : Rs.400/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                        <div> Minimum Order : 5 KG </div>
+                                    </div>
                                 </div>
                             </div>
+                       
                             <!-- White Pamfret-->
                             <div id='white-pamfret' class=" tab-content">
-                                <div class="">
-                                    <div class="header-clr pt-2">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
                                         White Pamfret
                                     </div>
-                                    <div class="d-flex pr-3">
-                                        <div class="container1 d-flex">
-                                            <div class="">
-                                                <div id="">
-                                                    <img src="images/new-images/Desi_Fish/White_Pomfret.jpg" alt=""
-                                                        class="w-fill">
-                                                </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
+                                                <img src="images/new-images/Desi_Fish/White_Pomfret.jpg" alt=""
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                        <div class="container1 px-2">
+                                        <div class="container1 m-auto">
                                             <div class="box-allignment">
-                                                <div class="product-description">
-                                                    <div class="">
+                                                <div class=" product-description">
+                                                    <div class="mb-2">
                                                         White Pomfret is a butterfish which is known for its amazing
                                                         taste. It is considered a delicacy and can be cooked in
                                                         diverse ways. Not only taste but also it is known for its
@@ -479,193 +392,163 @@
                                                         people. It is preservative-free. Fresho is our in-house
                                                         brand of fresh meat, poultry, and seafood.
                                                     </div>
+                                                   
 
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
-                                </div>
-
-                                <div class="product-description mt-2">
-                                    <div class="mb-2">
-                                        We take the
-                                        utmost care in selecting the best suppliers to provide you
-                                        with high-quality
-                                        succulent products. Every product is stored in our cold
-                                        storage right until your doorstep ensuring freshness and
-                                        utmost hygiene. The product was weighed before cleaning and
-                                        cutting. Net weight will be lower at the time of delivery
-                                        because of cleaning and processing weight loss.
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="product-description-rate">
-                                            Price
+                                    <div class="product-description px-2 pb-2">
+                                        <div class="mb-2">
+                                            We take the
+                                            utmost care in selecting the best suppliers to provide you
+                                            with high-quality
+                                            succulent products. Every product is stored in our cold
+                                            storage right until your doorstep ensuring freshness and
+                                            utmost hygiene. The product was weighed before cleaning and
+                                            cutting. Net weight will be lower at the time of delivery
+                                            because of cleaning and processing weight loss.
                                         </div>
-                                        <div class="product-description-rate-1">
-                                            : Rs.1500/-
-                                        </div>
-                                    </div>
-                                    <div class="d-flex">
-                                        <div class="product-description-rate">
-                                            Net
-                                        </div>
-                                        <div class="product-description-rate-1">
-                                            : 1 KG without Ice
-                                        </div>
+                                       
+                                        <div> Price : Rs.1500/-</div>
+                                        <div> Net : 1 KG with frozen condition 50:50 ratio</div>
+                                        
                                     </div>
 
                                 </div>
                             </div>
-                               <!-- Black Pomfret-->
-                        <div id='black-pomfret' class=" tab-content">
-                            <div class="">
-                                <div class="header-clr pt-2">
-                                    Black Pomfret
-                                </div>
-                                <div class="d-flex pr-3">
-                                    <div class="container1 d-flex">
-                                        <div class="">
-                                            <div id="">
+                           
+                       
+                            <!-- Black Pomfret-->
+                            <div id='black-pomfret' class=" tab-content">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
+                                        Black Pomfret
+                                    </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
                                                 <img src="images/new-images/Desi_Fish/Black_Pomfret.jpg" alt=""
-                                                    class="w-fill">
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="container1 px-2">
-                                        <div class="box-allignment">
-                                            <div class="product-description">
-                                                <div class="mb-2">
-                                                    Fresho Black Pomfret Fish is a delicious fish that provides
-                                                    light coloured flesh with a very pleasant flavour. There is
-                                                    a dark strip under the skin, but it is not noticeably
-                                                    stronger in flavour than the light flesh. The flesh holds
-                                                    together very well for all forms of wet cooking and pan
-                                                    frying but flakes easily on the plate. It is a particularly
-                                                    decent shape for cooking whole. It is a major source of
-                                                    calcium, vitamins A and D, and vitamin B12, vital for the
-                                                    nervous system.
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="product-description-rate">
-                                                        Price
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
+                                                    <div class="mb-2">
+                                                        Fresho Black Pomfret Fish is a delicious fish that provides
+                                                        light coloured flesh with a very pleasant flavour. There is
+                                                        a dark strip under the skin, but it is not noticeably
+                                                        stronger in flavour than the light flesh. The flesh holds
+                                                        together very well for all forms of wet cooking and pan
+                                                        frying but flakes easily on the plate. It is a particularly
+                                                        decent shape for cooking whole. It is a major source of
+                                                        calcium, vitamins A and D, and vitamin B12, vital for the
+                                                        nervous system.
                                                     </div>
-                                                    <div class="product-description-rate-1">
-                                                        : Rs.1500/-
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="product-description-rate">
-                                                        Net
-                                                    </div>
-                                                    <div class="product-description-rate-1">
-                                                        : 1 KG without Ice
-                                                    </div>
+                                                   
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="product-description px-2 pb-2">
+                                      
+                                       
+                                        <div> Price : Rs.1500/-</div>
+                                        <div> Net : 1 KG without Ice</div>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                        <!-- Koramenu Fish-->
-                        <div id='koramenu-fish' class=" tab-content">
-                            <div class="">
-                                <div class="header-clr pt-2">
-                                    Koramenu Fish
-                                </div>
-                                <div class="d-flex pr-3">
-                                    <div class="container1 d-flex">
-                                        <div class="">
-                                            <div id="">
+                           
+                          
+                            <!-- Koramenu Fish-->
+                            <div id='koramenu-fish' class=" tab-content">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
+                                        Koramenu Fish
+                                    </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
                                                 <img src="images/new-images/Desi_Fish/Koramenu.jpg" alt=""
-                                                    class="w-fill">
+                                                        class="w-fill">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="container1 px-2">
-                                        <div class="box-allignment">
-                                            <div class="product-description">
-                                                <div class="mb-2">
-                                                    Koramenu or Murrel fish is one of the popular fresh water
-                                                    and tasty fish in India. It’s an excellent source of omega-3
-                                                    fatty acids, protein. Regular consumption of Koramenu may
-                                                    prevent heart diseases and improve skin and hair glow. And
-                                                    its also useful for brain development, eye site improvement
-                                                    and control diabetes.
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="product-description-rate">
-                                                        Price
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
+                                                    <div class="mb-2">
+                                                        Koramenu or Murrel fish is one of the popular fresh water
+                                                        and tasty fish in India. It’s an excellent source of omega-3
+                                                        fatty acids, protein. Regular consumption of Koramenu may
+                                                        prevent heart diseases and improve skin and hair glow. And
+                                                        its also useful for brain development, eye site improvement
+                                                        and control diabetes.
                                                     </div>
-                                                    <div class="product-description-rate-1">
-                                                        : Rs.675/-
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="product-description-rate">
-                                                        Net
-                                                    </div>
-                                                    <div class="product-description-rate-1">
-                                                        : 1 KG with ice 50:50 ratio
-                                                    </div>
+                                                   
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="product-description px-2 pb-2">
+                                      
+                                       
+                                        <div> Price : Rs.675/-</div>
+                                        <div> Net : 1 KG with ice 50:50 ratio</div>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
-                        </div>
-                        <!-- Bommidayalu-->
-                        <div id='bommidayalu' class=" tab-content">
-                            <div class="">
-                                <div class="header-clr pt-2">
-                                    Bommidayalu
-                                </div>
-                                <div class="d-flex pr-3">
-                                    <div class="container1 d-flex">
-                                        <div class="">
-                                            <div id="">
+                            
+                            <!-- Bommidayalu-->
+                            <div id='bommidayalu' class=" tab-content">
+                                <div class="box-shadow">
+                                    <div class="header-clr-1 px-2 pt-2">
+                                        Bommidayalu
+                                    </div>
+                                    <div class="grid-1">
+                                        <div class="container">
+                                            <div class="p-2">
                                                 <img src="images/new-images/Desi_Fish/Bommidayalu.jpg" alt=""
-                                                    class="w-fill">
+                                                class="w-fill">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="container1 px-2">
-                                        <div class="box-allignment">
-                                            <div class="product-description">
-                                                <div class="mb-2">
-                                                    The fish has a generous amount of spices mixed with
-                                                    aromatics inside it. and these spices make for a brilliant
-                                                    burst of flavors inside your mouth fish is believed to be
-                                                    the source behind omega 3 fatty acids inside your body.
-                                                    These fatty acids make for a good flow of blood, and reduce
-                                                    chances of inflammation and heart diseases.
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="product-description-rate">
-                                                        Price
+                                        <div class="container1 m-auto">
+                                            <div class="box-allignment">
+                                                <div class=" product-description">
+                                                    <div class="mb-2">
+                                                        The fish has a generous amount of spices mixed with
+                                                        aromatics inside it. and these spices make for a brilliant
+                                                        burst of flavors inside your mouth fish is believed to be
+                                                        the source behind omega 3 fatty acids inside your body.
+                                                        These fatty acids make for a good flow of blood, and reduce
+                                                        chances of inflammation and heart diseases.
                                                     </div>
-                                                    <div class="product-description-rate-1">
-                                                        : Rs.700/-
-                                                    </div>
-                                                </div>
-                                                <div class="d-flex">
-                                                    <div class="product-description-rate">
-                                                        Net
-                                                    </div>
-                                                    <div class="product-description-rate-1">
-                                                        : 1 KG with ice 50:50 ratio
-                                                    </div>
+                                                   
+
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
+                                    <div class="product-description px-2 pb-2">
+                                      
+                                       
+                                        <div> Price : Rs.700/-</div>
+                                        <div> Net : 1 KG with ice 50:50 ratio</div>
+                                        
+                                    </div>
+
                                 </div>
                             </div>
+                           
+                            <div class="clear"></div>
                         </div>
-                        <div class="clear"></div>
-                        </div>
-                     
+
                     </div>
                 </div>
             </div>
@@ -742,7 +625,15 @@
                 </div>
             </div>
     </footer>
+    <script>
+        function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
 
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
+    </script>
 
 
     </div>
