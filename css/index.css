@@ -105,6 +105,10 @@
     padding-top: 0.5rem;
   }
 
+     .padding-footer {
+     padding: 1rem;
+   }
+
   .header-clr-1 {
     color: blueviolet;
     position: relative;
@@ -189,7 +193,7 @@
    }
 
    .box {
-     padding: 74px 0 54px 0;
+     padding: 90px 0 54px 0;
    }
 
    .logo1 {
@@ -347,21 +351,18 @@
    .auto-container {
      position: static;
      max-width: 1200px;
-     padding: 0px 30px;
+     /* padding: 0px 30px; */
      margin: 0 auto;
    }
 
    .main-footer-new {
      width: 1030px;
-     background: #1c1d1f;
+     background: white;
      margin: 0 auto;
-     padding: 30px 0 20px 0;
    }
 
    .main-footer-new .footer-top {
      position: relative;
-     padding: 73px 0px 100px 0px;
-     border-bottom: 2px solid rgba(255, 255, 255, 0.1);
    }
 
    .main-footer-new .footer-top .logo-widget .footer-logo {
@@ -763,10 +764,6 @@
      max-width: 100%;
    }
 
-   .main-footer-new .footer-top {
-     padding-bottom: 40px;
-   }
-
    .main-footer-new .footer-bottom .copyright,
    .main-footer-new .footer-bottom .footer-nav {
      float: none !important;
@@ -903,8 +900,8 @@
 
    .div-main-indent .container_24 {
      margin: 0 0 0 53px !important;
-     padding-bottom: 25px;
-     border-bottom: 1px solid #e4e4e4;
+     /* padding-bottom: 25px; */
+     /* border-bottom: 1px solid #e4e4e4; */
    }
 
    .container_24 {
@@ -929,7 +926,6 @@
 
    .contact-info-section {
      position: relative;
-     padding: 0 0 50px 0;
      background: #fff;
    }
 
@@ -942,7 +938,8 @@
    .contact-info-section .inner-container {
      position: relative;
      display: block;
-     padding: 50px 0px 40px 0px;
+     padding-top: 50px;
+    background: #095d6b;
    }
 
    .contact-info-section .single-info .inner-box {
@@ -1146,11 +1143,6 @@
      }
    }
 
-   .contact-info-section .inner-container {
-     background: #095d6b;
-   }
-
-
    .row-contact-info {
      display: -ms-flexbox;
      display: flex;
@@ -1197,60 +1189,6 @@
      cursor: pointer;
    }
 
-   .theme-btn {
-     position: relative;
-     display: inline-block;
-     font-size: 15px;
-     line-height: 26px;
-     font-weight: 700;
-     font-family: 'Rubik', sans-serif;
-     color: #fff !important;
-     text-align: center;
-     cursor: pointer;
-     border-radius: 5px;
-     padding: 17px 30px;
-     z-index: 1;
-     transition: all 500ms ease;
-   }
-
-   .theme-btn {
-     background: #095d6b;
-   }
-
-   .theme-btn:before {
-     position: absolute;
-     content: '';
-     background: #1c1d1f;
-     width: 100%;
-     height: 100%;
-     border-radius: 5px;
-     z-index: -1;
-     top: 0;
-     left: 0;
-     right: 0;
-     bottom: 0;
-     -webkit-transform: scaleX(0);
-     transform: scaleX(0);
-     -webkit-transform-origin: 50% 100%;
-     transform-origin: 50% 100%;
-     -webkit-transition-property: transform;
-     transition-property: transform;
-     -webkit-transition-duration: 0.5s;
-     transition-duration: 0.5s;
-     -webkit-transition-timing-function: ease-out;
-     transition-timing-function: ease-out;
-   }
-
-   .theme-btn:hover:before {
-     -webkit-transform: scaleX(1);
-     transform: scaleX(1);
-     -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-     transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
-   }
-
-
-
-
 .tabs ul.nav {
     list-style-image: none;
     /* display: inline-block; */
@@ -1266,7 +1204,7 @@
 }
 
 .tabs ul.nav li a {
-    color: #ffffff;
+    color: #45d7e5;
     font-weight: bolder;
     padding-left: 20px;
     font-size: 18px;
@@ -1275,7 +1213,7 @@
 
 .tabs ul.nav li.selected a, .tabs ul.nav li:hover a {
  font-weight: bolder;
-  color: #45d7e5;
+  color: blueviolet;
 }
 
 
