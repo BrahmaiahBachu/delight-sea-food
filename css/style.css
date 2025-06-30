@@ -1026,3 +1026,7 @@ footer a:hover {
   width: 100%;
   color: #717ebd;
 }
+.header .title-logo{
+  position: relative !important;
+  left: -26vw;
+}
