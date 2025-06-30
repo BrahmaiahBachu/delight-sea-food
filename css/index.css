@@ -1204,7 +1204,8 @@
 }
 
 .tabs ul.nav li a {
-    color: #45d7e5;
+    color: #FFFFFF;
+    /* color: #45d7e5; */
     font-weight: bolder;
     padding-left: 20px;
     font-size: 18px;

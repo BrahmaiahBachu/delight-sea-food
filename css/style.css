@@ -1,6 +1,10 @@
-@import url(http://fonts.googleapis.com/css?family=Damion); /*font-family: 'Damion', cursive;*/
-@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300,700); /*font-family: 'Comfortaa', cursive;*/
-@import url(http://fonts.googleapis.com/css?family=Italianno); /*font-family: 'Italianno', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Damion);
+/*font-family: 'Damion', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Comfortaa:400,300,700);
+/*font-family: 'Comfortaa', cursive;*/
+@import url(http://fonts.googleapis.com/css?family=Italianno);
+
+/*font-family: 'Italianno', cursive;*/
 /* Getting the new tags to behave */
 article,
 aside,
@@ -24,6 +28,7 @@ source,
 video {
   display: block;
 }
+
 mark,
 rp,
 rt,
@@ -57,6 +62,7 @@ body {
   min-height: 100%;
   background: url(../images/bg-main.jpg) center 0 no-repeat;
 }
+
 .main-1 {
   width: 100%;
   height: auto;
@@ -64,6 +70,7 @@ body {
   background: url(../images/bg-main-1.png) center bottom no-repeat;
   padding-bottom: 44px;
 }
+
 /***********************************************************************/
 /*properties for h1 h2 h3 h4 h5 and another text*/
 .logo {
@@ -72,6 +79,7 @@ body {
   margin: 24px 0 0 0;
   text-align: center;
 }
+
 h1 {
   display: block;
   font-family: "Damion", cursive;
@@ -80,6 +88,7 @@ h1 {
   margin: 0 auto;
   padding-right: 56px;
 }
+
 h1 a {
   display: inline-block;
   background: url(../images/logo.png) 0 0 no-repeat;
@@ -95,6 +104,7 @@ h2 {
   font-weight: normal;
   /* text-transform: uppercase; */
 }
+
 .h2 {
   font-size: 24px;
   font-family: "Comfortaa", cursive;
@@ -105,9 +115,11 @@ h2 {
   background: url(../images/arrow-h2.png) left 5px no-repeat;
   /* text-transform: uppercase; */
 }
+
 .h2 span {
   color: #fe6217;
 }
+
 .h2:hover {
   color: #fe6217;
 }
@@ -121,48 +133,59 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
 }
+
 h3 a {
   color: #45d7e5;
 }
+
 h3 a:hover {
   color: #000;
 }
 
-h4 {
-}
+h4 {}
 
 .txt_uppercase {
   text-transform: uppercase;
 }
+
 .txt_decor {
   text-decoration: none !important;
 }
+
 .txt_al {
   text-align: center;
 }
+
 .txt_al-r {
   text-align: right;
 }
+
 .bold {
   font-weight: bold;
 }
+
 .txt_norm {
   text-transform: none !important;
 }
+
 .line-h-1 {
   line-height: 19px;
 }
+
 .ff-1 {
   font-family: "Italianno", cursive;
   font-size: 43px;
   line-height: 55px;
 }
+
 .ff-2 {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+
 .font-14 {
   font-size: 14px;
 }
+
 .font-24 {
   font-size: 24px;
 }
@@ -178,6 +201,7 @@ h4 {
 .dis-block {
   display: block;
 }
+
 .dis-inblock {
   display: inline-block;
 }
@@ -185,6 +209,7 @@ h4 {
 .col {
   color: #6e6e6e;
 }
+
 .col-1 {
   color: #353535;
 }
@@ -193,33 +218,42 @@ h4 {
   margin-bottom: 0 !important;
   padding-bottom: 0 !important;
 }
+
 .marg_top {
   margin-top: 0 !important;
   padding-top: 0 !important;
 }
+
 .marg_left-0 {
   margin-left: 0 !important;
 }
+
 .marg_right-0 {
   margin-right: 0 !important;
 }
+
 .marg-left-right-0 {
   margin-left: 0 !important;
   margin-right: 0 !important;
 }
+
 .marg {
   margin: 0 !important;
   padding: 0 !important;
 }
+
 .marg_20 {
   margin-top: 20px !important;
 }
+
 .padding_right {
   padding-right: 0 !important;
 }
+
 .padding_left {
   padding-left: 0 !important;
 }
+
 .padding {
   padding: 0px !important;
 }
@@ -227,25 +261,32 @@ h4 {
 .padd {
   margin: -1px 5px 38px 5px !important;
 }
+
 .padd-1 {
   margin-bottom: 20px;
   padding-top: 5px;
 }
+
 .padd-2 {
   margin: 45px 0 30px 0;
 }
+
 .padd-3 {
   margin: 45px 0 25px 0;
 }
+
 .padd-4 {
   margin: 45px 0 20px 0;
 }
+
 .padd-4-1 {
   margin: 45px 0 3px 80px;
 }
+
 .padd-4-2 {
   margin: 45px 0 3px 40px;
 }
+
 .padd-5 {
   margin: 45px 0 20px 0;
 }
@@ -253,27 +294,35 @@ h4 {
 .top {
   padding-top: 8px;
 }
+
 .top-0 {
   padding-top: 14px;
 }
+
 .top-0-1 {
   padding-top: 11px;
 }
+
 .top-0-2 {
   margin-top: 8px;
 }
+
 .top-2 {
   margin-top: 3px;
 }
+
 .top-2 {
   margin-top: 5px;
 }
+
 .top-3 {
   margin-top: 18px;
 }
+
 .top-4 {
   margin-top: 31px;
 }
+
 .top-5 {
   margin-top: 32px;
 }
@@ -281,30 +330,39 @@ h4 {
 .bot {
   margin-bottom: 14px;
 }
+
 .bot-0 {
   margin-bottom: 16px;
 }
+
 .bot-0-1 {
   margin-bottom: 18px;
 }
+
 .bot-1 {
   margin-bottom: 7px;
 }
+
 .bot-1-1 {
   margin-bottom: 11px;
 }
+
 .bot-2 {
   padding-bottom: 23px;
 }
+
 .bot-2-1 {
   padding-bottom: 20px;
 }
+
 .bot-2-2 {
   margin-bottom: 20px;
 }
+
 .bot-3 {
   margin-bottom: 26px;
 }
+
 .bot-4 {
   padding-bottom: 43px;
 }
@@ -316,9 +374,11 @@ h4 {
 .right {
   margin-right: 9px;
 }
+
 .right-1 {
   margin-right: 11px;
 }
+
 .right-2 {
   margin-right: 21px;
 }
@@ -327,12 +387,14 @@ h4 {
   border-bottom: 1px solid #e9e7e0;
   margin: 47px 0 45px 0;
 }
+
 /*properties for a */
 
 a {
   text-decoration: none;
   cursor: pointer;
 }
+
 a:hover {
   text-decoration: none;
 }
@@ -362,15 +424,19 @@ ul {
   font-size: 0;
   width: 100%;
 }
+
 .wrapper {
   overflow: hidden;
 }
+
 .wrapper-extra {
   overflow: hidden;
 }
+
 .extra-wrap {
   overflow: hidden;
 }
+
 .wrapper-after:after {
   clear: both;
   content: ".";
@@ -378,12 +444,15 @@ ul {
   height: 0;
   visibility: hidden;
 }
+
 .fleft {
   float: left;
 }
+
 .fright {
   float: right;
 }
+
 /*search and tooltip*/
 /*********************************header*************************************/
 .head {
@@ -399,12 +468,15 @@ header {
   position: relative;
   background: url(../images/bg-head.png) center 0 no-repeat;
 }
+
 .indent-pages {
   padding-bottom: 39px;
 }
+
 .menu {
   padding: 30px 0 20px 143px;
 }
+
 /*********************************content*************************************/
 #content {
   width: 100%;
@@ -417,6 +489,7 @@ header {
   display: inline-block;
   position: relative;
 }
+
 .lightbox-image img.magnify {
   position: absolute;
   width: 0px;
@@ -436,26 +509,32 @@ header {
   font-size: 13px;
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
 }
+
 .adress dd {
   text-align: left;
 }
+
 .adress a {
   color: #6e6e6e;
   display: inline-block;
   font-size: 13px;
 }
+
 .adress a:hover {
   color: #29d3e3;
   text-decoration: underline;
 }
+
 .adress span {
   display: inline-block;
   width: 91px;
 }
+
 .adress strong {
   display: inline-block;
   font-weight: 500 !important;
 }
+
 .title1 {
   text-align: left;
   font-size: 13px;
@@ -464,22 +543,27 @@ header {
   font-weight: bold;
   color: #6e6e6e;
 }
+
 .pp {
   display: inline-block;
 }
+
 .pp a {
   text-decoration: underline;
 }
+
 /**********************************index***********************************/
 .div-main {
   width: 1070px;
   margin: 0 auto;
   background: url(../images/bg-content.png) center 0 repeat-y;
 }
+
 .div-main-indent {
   width: 1070px;
   margin: 0 auto;
 }
+
 .div-main-indent .container_24 {
   margin: 0 0 0 53px !important;
   padding-bottom: 25px;
@@ -489,6 +573,7 @@ header {
 .light-banner {
   background: url(../images/light-content.png) center 0 no-repeat;
 }
+
 #marg-1 {
   margin-top: -125px;
 }
@@ -504,12 +589,15 @@ header {
   border-bottom: 1px solid #e9e7e0;
   margin-bottom: 33px;
 }
+
 .box-1 p {
   margin: 0 40px;
 }
+
 .box-1 a {
   color: #fe9308;
 }
+
 .box-1 a:hover {
   color: #1c83a7;
 }
@@ -518,13 +606,16 @@ header {
   overflow: hidden;
   padding-bottom: 30px;
 }
+
 .box-2 img {
   margin-left: 30px;
   margin-right: 28px;
 }
+
 .box-2 .extra-wrap {
   margin: 25px 0 0 0;
 }
+
 .box-2 p {
   margin: 10px 0 0 0;
 }
@@ -533,13 +624,16 @@ header {
   overflow: hidden;
   padding-bottom: 30px;
 }
+
 .box-3 img {
   margin-left: 21px;
   margin-right: 28px;
 }
+
 .box-3 .extra-wrap {
   margin: 25px 0 0 0;
 }
+
 .box-3 p {
   margin: 10px 0 0 0;
 }
@@ -548,8 +642,8 @@ header {
   border-bottom: 1px solid #eaeaea;
 }
 
-.list {
-}
+.list {}
+
 .list li {
   background: url(../images/bg-li-list.png) left 10px no-repeat;
   font-size: 14px;
@@ -557,12 +651,15 @@ header {
   padding: 6px 0 7px 20px;
   font-family: Arial, Helvetica, sans-serif;
 }
+
 .list li a {
   color: #29d3e3;
 }
+
 .list li a:hover {
   color: #000;
 }
+
 .box-5 {
   width: 191px;
   padding-right: 10px;
@@ -580,6 +677,7 @@ header {
 .bg-right-1 {
   background: url(../images/bg-right.jpg) right 0 repeat-y;
 }
+
 .box-4 {
   overflow: hidden;
   width: 310px;
@@ -593,11 +691,13 @@ header {
   margin-bottom: 17px;
   border-bottom: 1px solid #eaeaea;
 }
+
 .bdb-3 {
   padding-bottom: 24px;
   margin-bottom: 19px;
   border-bottom: 1px solid #eaeaea;
 }
+
 /**********************************slider**********************************/
 .box-slider {
   position: relative;
@@ -605,6 +705,7 @@ header {
   margin: 0 auto;
   width: 1000px;
 }
+
 .roundabout {
   height: 406px;
   list-style: none outside none;
@@ -621,9 +722,11 @@ header {
   text-align: center;
   width: 507px;
 }
+
 .roundabout-moveable-item img {
   width: 100%;
 }
+
 .roundabout-in-focus {
   cursor: auto;
 }
@@ -656,15 +759,18 @@ header {
 .bg-right-2 {
   background: url(../images/bg-right.jpg) 282px 0 repeat-y;
 }
+
 .bg-right-3 {
   background: url(../images/bg-right.jpg) 322px 0 repeat-y;
 }
+
 .box-7 {
   width: 231px;
   background: url(../images/bg-right.jpg) right 0 repeat-y;
   margin: 45px 0 0 0;
   padding-right: 50px;
 }
+
 .box-7 h2 {
   margin-bottom: 30px;
 }
@@ -675,6 +781,7 @@ header {
   margin: 45px 0 0 0;
   padding-right: 52px;
 }
+
 .box-8 h2 {
   margin-bottom: 25px;
 }
@@ -685,6 +792,7 @@ header {
   padding-right: 50px;
   padding-bottom: 26px;
 }
+
 .box-9 h2 {
   margin-bottom: 25px;
 }
@@ -701,12 +809,15 @@ header {
   padding-right: 50px;
   padding-bottom: 12px;
 }
+
 .box-10 h2 {
   margin-bottom: 25px;
 }
+
 .box-10 .ff-2 {
   margin-top: -20px;
 }
+
 .box-10 .ff-1 {
   margin-top: 4px;
 }
@@ -716,6 +827,7 @@ header {
   padding-left: 80px;
   padding-top: 27px;
 }
+
 /**********************************index-2*********************************/
 
 /**********************************index-3*********************************/
@@ -724,34 +836,42 @@ header {
   padding-left: 40px;
   margin-top: 45px;
 }
+
 .box-12 h2 {
   margin-bottom: 25px;
 }
+
 /**********************************index-4*********************************/
 .box-13 {
   padding-left: 20px;
 }
+
 .box-14 {
   padding-left: 22px;
 }
+
 /**********************************index-5*********************************/
 .box-15 {
   background: url(../images/bg-right.jpg) 0 0 repeat-y;
   margin-top: 45px;
   padding-left: 40px;
 }
+
 .box-15 h2 {
   margin-bottom: 30px;
 }
+
 /**********************************index-6*********************************/
 .box-16 {
   background: url(../images/bg-right.jpg) 680px 0 repeat-y;
   margin-top: 45px;
   padding-right: 81px;
 }
+
 .box-16 h2 {
   margin-bottom: 25px;
 }
+
 /**********************************contact-form****************************/
 #form1 {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -787,26 +907,31 @@ header {
   font-size: 13px;
   border-left: 1px solid #f7f7f7;
 }
+
 #form1 label {
   display: block;
   min-height: 47px;
   width: auto;
   position: relative;
 }
+
 #form1 label .feed_name {
   display: block;
   float: left;
 }
+
 #form1 label.message {
   display: block;
   padding-bottom: 0;
 }
+
 #form1 span {
   display: block;
   margin: 0px 0 6px 3px;
   float: left;
   width: 165px;
 }
+
 #form1 .error,
 #form1 .empty,
 #form1 .success {
@@ -815,6 +940,7 @@ header {
   color: #000;
   margin-bottom: 3px;
 }
+
 #form1 .error,
 #form1 .empty {
   text-align: left;
@@ -826,6 +952,7 @@ header {
   width: 165px;
   display: none;
 }
+
 #form1 .message .empty {
   position: static;
   margin: 5px 0 5px 5px;
@@ -836,11 +963,12 @@ header {
   position: relative;
   padding: 15px 0 0 0;
 }
+
 #form1 .buttons2 .button {
   float: right;
 }
-#form1 .buttons2 .button:hover {
-}
+
+#form1 .buttons2 .button:hover {}
 
 .error-empty {
   margin: 0 0 10px 5px !important;
@@ -849,6 +977,7 @@ header {
   width: 165px;
   word-spacing: -1px;
 }
+
 /****************************footer************************/
 footer {
   font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
@@ -857,22 +986,26 @@ footer {
   text-transform: uppercase;
   text-align: center;
 }
+
 .main-footer {
   width: 1070px;
   background: url(../images/bg-content.png) center 0 repeat-y;
   margin: 0 auto;
   padding: 30px 0 20px 0;
 }
+
 .main-footer-1 {
   width: 1070px;
   background: url(../images/bg-footer-bot.png) 0 0 no-repeat;
   height: 42px;
   margin: 0 auto;
 }
+
 .main-foot-1 {
   width: 1030px;
   margin: 0 auto;
 }
+
 footer img {
   margin: 6px 0 0 0;
 }
@@ -880,6 +1013,16 @@ footer img {
 footer a {
   color: white;
 }
+
 footer a:hover {
   color: #000;
+}
+
+.title-logo {
+  position: absolute;
+  top: -3vw;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #717ebd;
 }
